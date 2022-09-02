@@ -92,11 +92,7 @@ a:active {
 
 #navigation {
     text-align: center;
-}
-
-/* everywhere else */
-* {
-    font-family: "Lora", Arial, Helvetica, sans-serif;
+    padding-bottom: 2rem;
 }
 
 /* Kanji */
@@ -105,4 +101,24 @@ a:active {
     font-family: "Lora", Arial, Helvetica, sans-serif;
     font-size: 250%;
     font-weight: bold;
+}
+
+/* Images */
+.imgStyle {
+    border-radius: 26px;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+.imgBlock {
+    /* width: auto;
+    height: auto; */
+    text-align: center;
+}
+
+/* everywhere else */
+* {
+    font-family: "Lora", Arial, Helvetica, sans-serif;
 }
