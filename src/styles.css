@@ -9,8 +9,9 @@ h1 {
 
 h2 {
     font-family: "Lora", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: normal;
+    display: inline;
 }
 
 h3 {
@@ -21,6 +22,15 @@ h3 {
 
 body {
     margin: 2em;
+}
+
+nav {
+    display: inline;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 20px;
 }
 
 /* body,
@@ -70,14 +80,18 @@ a:hover, a:focus {
     color: inherit;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
+    text-underline-offset: 8px;
 }
 
 a:active {
     color: #d01500;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
+    text-underline-offset: 8px;
+}
+
+#navigation {
+    text-align: center;
 }
 
 /* everywhere else */

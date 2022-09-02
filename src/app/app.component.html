@@ -25,13 +25,15 @@
 
 <!-- Navigation Bar -->
 <div id="navigation">
-    <nav class="current">
+    <nav>
         <a routerLink="/home">
             <h2>
                 HOME
             </h2>
         </a>
     </nav>
+
+    <span class="tab"></span>
 
     <nav>
         <a routerLink="/location">
@@ -41,6 +43,8 @@
         </a>
     </nav>
 
+    <span class="tab"></span>
+
     <nav>
         <a routerLink="/menu">
             <h2>
@@ -49,6 +53,8 @@
         </a>
     </nav>
 
+    <span class="tab"></span>
+
     <nav>
         <a routerLink="/order">
             <h2>
@@ -56,6 +62,8 @@
             </h2>
         </a>
     </nav>
+
+    <span class="tab"></span>
 
     <nav>
         <a routerLink="/reservations">
@@ -66,7 +74,7 @@
     </nav>
 </div>
 
-
+<!-- Tells the router where to display routed views -->
 <router-outlet></router-outlet>
 
 <!-- Footer -->

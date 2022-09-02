@@ -1,6 +1,9 @@
 #header {
     min-width: none;
-    max-width: none;
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem;
 }
 
 #left-box {
@@ -26,4 +29,6 @@
     font-family: "Great Vibes", Arial, Helvetica, sans-serif;
     font-size: 500%;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
