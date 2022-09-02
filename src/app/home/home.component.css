@@ -1,0 +1,9 @@
+#title {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+}
+
+#homeDesc {
+    padding: 0% 10%;
+}

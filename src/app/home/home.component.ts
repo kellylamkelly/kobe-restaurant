@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  title = 'WELCOME';
+  desc = 'We offer guests a Teppanyaki dining experience along with a variety of sushi and sashimi options. We look forward to serving you!';
 
   constructor() { }
 
