@@ -1,2 +1,72 @@
-<app-header></app-header>
-<app-nav-bar></app-nav-bar>
+<!-- Main Header -->
+<div id="header" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+    <div id="left-box">
+        <div class="kanji">
+            {{sym1}}
+        </div>
+        <div class="kanji">
+            {{sym2}}
+        </div>
+    </div>
+
+    <div id="middle-box">
+        <div id="title">{{title}}</div>
+    </div>
+
+    <div id="right-box">
+        <div class="kanji">
+            {{sym3}}
+        </div>
+        <div class="kanji">
+            {{sym4}}
+        </div>
+    </div>
+</div>
+
+<!-- Navigation Bar -->
+<div id="navigation">
+    <nav class="current">
+        <a routerLink="/home">
+            <h2>
+                HOME
+            </h2>
+        </a>
+    </nav>
+
+    <nav>
+        <a routerLink="/location">
+            <h2>
+                HOURS & LOCATION
+            </h2>
+        </a>
+    </nav>
+
+    <nav>
+        <a routerLink="/menu">
+            <h2>
+                MENU
+            </h2>
+        </a>
+    </nav>
+
+    <nav>
+        <a routerLink="/order">
+            <h2>
+                ORDER ONLINE
+            </h2>
+        </a>
+    </nav>
+
+    <nav>
+        <a routerLink="/reservations">
+            <h2>
+                RESERVATIONS
+            </h2>
+        </a>
+    </nav>
+</div>
+
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
