@@ -132,11 +132,18 @@ a:active {
 }
 
 /* Title/Description */
-.descBlock {
+.homeDescBlock {
     text-align: center;
     width: auto;
     height: auto;
     padding: 50px 0px 50px 0px;
+}
+
+.descBlock {
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 50px 0px;
 }
 
 /* everywhere else */
