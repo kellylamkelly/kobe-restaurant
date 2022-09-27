@@ -1,0 +1,64 @@
+{
+    "menu": {
+        "appetizers": {
+            "soupAndSalads": [
+                {
+                    "id": 114,
+                    "name": "House Soup",
+                    "price": 1.95,
+                    "desc": "Clear chicken broth with mushrooms & scallions"
+                },
+                {
+                    "id": 115,
+                    "name": "Miso Soup",
+                    "price": 1.95,
+                    "desc": "Bean paste soup with mushrooms & scallions"
+                },
+                {
+                    "id": 116,
+                    "name": "Kobe Salad",
+                    "price": 2.50,
+                    "desc": "Iceberg lettuce, ginger dressing, carrots, & tomato"
+                },
+                {
+                    "id": 117,
+                    "name": "Large Kobe Salad",
+                    "price": 4.50,
+                    "desc": ""
+                },
+                {
+                    "id": 102,
+                    "name": "Seaweed Salad",
+                    "price": 4.25,
+                    "desc": "Japanese Seaweed Salad (Wakame)"
+                },
+                {
+                    "id": 103,
+                    "name": "Tako Salad",
+                    "price": 5.25,
+                    "desc": "Octopus and cucumber"
+                },
+                {
+                    "id": 104,
+                    "name": "Crab Salad",
+                    "price": 5.25,
+                    "desc": "Imitation crab, spicy mayo, & cucumber"
+                }
+            ],
+            "apps": [
+                {
+                    "id": 100,
+                    "name": "Edamame",
+                    "price": 4.25,
+                    "desc": "Lightly boiled and salted soybeans"
+                },
+                {
+                    "id": 101,
+                    "name": "Spring Rolls",
+                    "price": 4.25,
+                    "desc": "Chicken & vegetable filled crispy rolls"
+                }
+            ]
+        }
+    }
+}

@@ -1,1 +1,12 @@
-<p>app-menu works!</p>
+<h1>MENU</h1>
+
+<h2>SOUPS & SALADS</h2>
+<div *ngFor="let menu of soupAndSalads">
+    <h2>{{menu.name}} — {{menu.price}}</h2>
+    <h3>{{menu.desc}}</h3>
+</div>
+
+<div *ngFor="let menu of apps">
+    <div>{{menu.name}} — {{menu.price}}</div>
+    <div>{{menu.desc}}</div>
+</div>
