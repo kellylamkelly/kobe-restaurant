@@ -92,8 +92,8 @@ a:active {
     text-underline-offset: 8px;
 }
 
-/* Navigation/Menu/Footer */
-#navigation {
+/* Navigation/Menu */
+.navigation {
     text-align: center;
     padding-bottom: 2rem;
 }

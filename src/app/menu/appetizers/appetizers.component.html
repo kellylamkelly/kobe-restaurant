@@ -1,12 +1,11 @@
-<h1>MENU</h1>
-
-<h2>SOUPS & SALADS</h2>
+<h1>SOUPS & SALADS</h1>
 <div *ngFor="let menu of soupAndSalads">
     <h2>{{menu.name}} — {{menu.price}}</h2>
     <h3>{{menu.desc}}</h3>
 </div>
 
+<h1>APPETIZERS</h1>
 <div *ngFor="let menu of apps">
-    <div>{{menu.name}} — {{menu.price}}</div>
-    <div>{{menu.desc}}</div>
+    <h2>{{menu.name}} — {{menu.price}}</h2>
+    <h3>{{menu.desc}}</h3>
 </div>

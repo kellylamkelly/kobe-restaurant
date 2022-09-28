@@ -1,1 +1,67 @@
-<p>menu works!</p>
+<div class="descBlock">
+    <!-- Title -->
+    <div style="padding-bottom: 30px;">
+        <h1 style="text-align: center;">
+            MENU
+        </h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navigation">
+        <nav>
+            <a routerLink="/menu/appetizers">
+                <h2>
+                    APPETIZERS
+                </h2>
+            </a>
+        </nav>
+
+        <span class="tab"></span>
+
+        <nav>
+            <a routerLink="/menu/teppanyaki">
+                <h2>
+                    TEPPANYAKI
+                </h2>
+            </a>
+        </nav>
+
+        <span class="tab"></span>
+
+        <nav>
+            <a routerLink="/menu/sushi">
+                <h2>
+                    SUSHI
+                </h2>
+            </a>
+        </nav>
+
+        <span class="tab"></span>
+
+        <nav>
+            <a routerLink="/menu/dessert">
+                <h2>
+                    DESSERT
+                </h2>
+            </a>
+        </nav>
+
+        <span class="tab"></span>
+
+        <nav>
+            <a routerLink="/menu/beverages">
+                <h2>
+                    BEVERAGES
+                </h2>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Display selected menu -->
+    <router-outlet></router-outlet>
+</div>
+
+<!-- Menu Image -->
+<div class="imgBlock">
+    <img class="imgStyle" src="../assets/sushi.jpg" alt="Sushi">
+</div>
