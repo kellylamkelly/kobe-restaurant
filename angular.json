@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "4890-Final-Project": {
+    "Kobe-Restaurant": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/4890-final-project",
+            "outputPath": "dist/kobe-restaurant",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "4890-Final-Project:build:production"
+              "browserTarget": "Kobe-Restaurant:build:production"
             },
             "development": {
-              "browserTarget": "4890-Final-Project:build:development"
+              "browserTarget": "Kobe-Restaurant:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "4890-Final-Project:build"
+            "browserTarget": "Kobe-Restaurant:build"
           }
         },
         "test": {
