@@ -23,8 +23,7 @@
                 {
                     "id": 117,
                     "name": "Large Kobe Salad",
-                    "price": 4.50,
-                    "desc": ""
+                    "price": 4.50
                 },
                 {
                     "id": 102,
@@ -57,6 +56,166 @@
                     "name": "Spring Rolls",
                     "price": 4.25,
                     "desc": "Chicken & vegetable filled crispy rolls"
+                },
+                {
+                    "id": 105,
+                    "name": "Gyoza",
+                    "price": 6.25,
+                    "desc": "Pan fried pork dumplings"
+                },
+                {
+                    "id": 106,
+                    "name": "Kobe Appetizer",
+                    "price": 6.25,
+                    "desc": "Shrimp, broccoli, & onion tempura"
+                },
+                {
+                    "id": 107,
+                    "name": "Yakitori",
+                    "price": 6.25,
+                    "desc": "Chicken & onion skewers with teriyaki sauce"
+                },
+                {
+                    "id": 108,
+                    "name": "Crab Cakes",
+                    "price": 6.25,
+                    "desc": "Deep fried shrimp dumplings"
+                }
+            ],
+            "sushiApps": [
+                {
+                    "id": 111,
+                    "name": "Unagi Kabayaki",
+                    "price": 9.25,
+                    "desc": "3 pieces of freshwater eel on a bed of rice"
+                },
+                {
+                    "id": 112,
+                    "name": "Sushi Appetizer",
+                    "price": 9.95,
+                    "desc": "4 pieces of chef picked nigiri"
+                },
+                {
+                    "id": 113,
+                    "name": "Sashimi Appetizer",
+                    "price": 10.95,
+                    "desc": "5 pieces of chef picked sashimi"
+                }
+            ],
+            "noodlesAndRice": [
+                {
+                    "id": 109,
+                    "name": "Side Noodles",
+                    "price": 6.25,
+                    "desc": "One serving of plain lo mein noodles"
+                },
+                {
+                    "id": 110,
+                    "name": "Udon Noodles",
+                    "price": 13.95,
+                    "desc": "Thick rice noodles in clear broth with vegetables & shrimp tempura"
+                },
+                {
+                    "id": 118,
+                    "name": "Fried/Steamed Rice",
+                    "price": 4.25,
+                    "desc": "One serving of plain rice"
+                }
+            ]
+        },
+        "teppanyaki": {
+            "singleChoice": [
+                {
+                    "id": 300,
+                    "name": "Teriyaki Chicken",
+                    "price": 17.95,
+                    "desc": "6 ounces of chicken cooked with homemade teriyaki sauce"
+                }
+            ]
+        },
+        "sushi": {
+            "nirigi": [
+                {
+                    "id": 200,
+                    "name": "Tuna",
+                    "price": 2.50
+                }
+            ],
+            "entrees": [
+                {
+                    "id": 300,
+                    "name": "Sushi A",
+                    "price": 17.95,
+                    "desc": "California roll and 8 pieces of chef-picked nigiri"
+                },
+                {
+                    "id": 300,
+                    "name": "Sushi B",
+                    "price": 17.95,
+                    "desc": "California roll and 12 pieces of chef-picked nigiri"
+                }
+            ],
+            "rolls": [
+                {
+                    "id": 300,
+                    "name": "Alaska Roll",
+                    "price": 17.95,
+                    "desc": "Smoked salmon, avocado, cucumber and sesame seeds"
+                }
+            ]
+        },
+        "dessert": [
+            {
+                "id": 500,
+                "name": "Japanese Custard",
+                "price": 3.95
+            },
+            {
+                "id": 501,
+                "name": "New York Cheesecake",
+                "price": 3.95
+            },
+            {
+                "id": 502,
+                "name": "Green Tea Ice Cream",
+                "price": 2.50
+            },
+            {
+                "id": 503,
+                "name": "Red Bean Ice Cream",
+                "price": 2.50
+            }
+        ],
+        "beverages": {
+            "nonAlcohol": [
+                {
+                    "id": 300,
+                    "name": "Pepsi/Diet Pepsi",
+                    "price": 17.95
+                }
+            ],
+            "cocktails": [
+                {
+                    "id": 300,
+                    "name": "Teriyaki Chicken",
+                    "price": 17.95,
+                    "desc": "6 ounces of chicken cooked with homemade teriyaki sauce"
+                }
+            ],
+            "beers": [
+                {
+                    "id": 300,
+                    "name": "Teriyaki Chicken",
+                    "price": 17.95,
+                    "desc": "6 ounces of chicken cooked with homemade teriyaki sauce"
+                }
+            ],
+            "wine": [
+                {
+                    "id": 300,
+                    "name": "Teriyaki Chicken",
+                    "price": 17.95,
+                    "desc": "6 ounces of chicken cooked with homemade teriyaki sauce"
                 }
             ]
         }

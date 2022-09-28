@@ -1,11 +1,23 @@
-<h1>SOUPS & SALADS</h1>
+<h2>SOUPS & SALADS</h2>
 <div *ngFor="let menu of soupAndSalads">
-    <h2>{{menu.name}} — {{menu.price}}</h2>
-    <h3>{{menu.desc}}</h3>
+    <h3 style="text-transform:uppercase">{{menu.name}} — {{menu.price}}</h3>
+    <h4>{{menu.desc}}</h4>
 </div>
 
-<h1>APPETIZERS</h1>
+<h2>APPETIZERS</h2>
 <div *ngFor="let menu of apps">
-    <h2>{{menu.name}} — {{menu.price}}</h2>
-    <h3>{{menu.desc}}</h3>
+    <h3 style="text-transform:uppercase">{{menu.name}} — {{menu.price}}</h3>
+    <h4>{{menu.desc}}</h4>
+</div>
+
+<h2>SUSHI APPETIZERS</h2>
+<div *ngFor="let menu of sushiApps">
+    <h3 style="text-transform:uppercase">{{menu.name}} — {{menu.price}}</h3>
+    <h4>{{menu.desc}}</h4>
+</div>
+
+<h2>NOODLES & RICE</h2>
+<div *ngFor="let menu of noodlesAndRice">
+    <h3 style="text-transform:uppercase">{{menu.name}} — {{menu.price}}</h3>
+    <h4>{{menu.desc}}</h4>
 </div>
