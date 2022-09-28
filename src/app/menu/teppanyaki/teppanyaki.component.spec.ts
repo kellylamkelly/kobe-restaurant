@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TeppanyakiMenuComponent } from './teppanyaki-menu.component';
+import { TeppanyakiComponent } from './teppanyaki.component';
 
-describe('TeppanyakiMenuComponent', () => {
-  let component: TeppanyakiMenuComponent;
-  let fixture: ComponentFixture<TeppanyakiMenuComponent>;
+describe('TeppanyakiComponent', () => {
+  let component: TeppanyakiComponent;
+  let fixture: ComponentFixture<TeppanyakiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TeppanyakiMenuComponent ]
+      declarations: [ TeppanyakiComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TeppanyakiMenuComponent);
+    fixture = TestBed.createComponent(TeppanyakiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -2,13 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import menuJson from 'src/assets/menu.json';
 
 @Component({
-  selector: 'app-app-menu',
-  templateUrl: './app-menu.component.html',
-  styleUrls: ['./app-menu.component.css']
+  selector: 'app-appetizers',
+  templateUrl: './appetizers.component.html',
+  styleUrls: ['./appetizers.component.css']
 })
-
-export class AppMenuComponent implements OnInit {
-
+export class AppetizersComponent implements OnInit {
   soupAndSalads = menuJson.menu.appetizers.soupAndSalads;
   apps = menuJson.menu.appetizers.apps;
 
@@ -16,4 +14,5 @@ export class AppMenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 }

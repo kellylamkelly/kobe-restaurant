@@ -4,27 +4,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HoursLocationComponent } from './hours-location/hours-location.component';
-import { AppMenuComponent } from './app-menu/app-menu.component';
-import { TeppanyakiMenuComponent } from './teppanyaki-menu/teppanyaki-menu.component';
-import { SushiMenuComponent } from './sushi-menu/sushi-menu.component';
-import { DessertMenuComponent } from './dessert-menu/dessert-menu.component';
-import { BevMenuComponent } from './bev-menu/bev-menu.component';
 import { HomeComponent } from './home/home.component';
 import { OrderOnlineComponent } from './order-online/order-online.component';
 import { ReservationsComponent } from './reservations/reservations.component';
+import { MenuComponent } from './menu/menu.component';
+import { AppetizersComponent } from './menu/appetizers/appetizers.component';
+import { TeppanyakiComponent } from './menu/teppanyaki/teppanyaki.component';
+import { SushiComponent } from './menu/sushi/sushi.component';
+import { DessertComponent } from './menu/dessert/dessert.component';
+import { BeveragesComponent } from './menu/beverages/beverages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HoursLocationComponent,
-    AppMenuComponent,
-    TeppanyakiMenuComponent,
-    SushiMenuComponent,
-    DessertMenuComponent,
-    BevMenuComponent,
     HomeComponent,
     OrderOnlineComponent,
-    ReservationsComponent
+    ReservationsComponent,
+    MenuComponent,
+    AppetizersComponent,
+    TeppanyakiComponent,
+    SushiComponent,
+    DessertComponent,
+    BeveragesComponent
   ],
   imports: [
     BrowserModule,
