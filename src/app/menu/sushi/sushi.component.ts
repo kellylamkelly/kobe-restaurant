@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import menuJson from 'src/assets/menu.json';
 
 @Component({
   selector: 'app-sushi',
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sushi.component.css']
 })
 export class SushiComponent implements OnInit {
+
+  menus = [
+    {label: "NIGIRI", field: menuJson.menu.sushi.nigiri},
+    {label: "ENTR\u00C9ES", field: menuJson.menu.sushi.entrees}, 
+    {label: "SUSHI ROLLS", field: menuJson.menu.sushi.rolls}
+  ]
 
   constructor() { }
 
