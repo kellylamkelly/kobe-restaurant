@@ -459,11 +459,102 @@
             ],
             "extras": [
                 {
-                    "id": 0,
-                    "name": "",
-                    "price": 0.95,
+                    "id": 347,
+                    "name": "Extra Teriyaki Chicken",
+                    "price": 11.95,
+                    "desc": "6 ounces",
+                    "abbrev": "+TC"
+                },
+                {
+                    "id": 348,
+                    "name": "Extra Ribeye",
+                    "price": 11.95,
+                    "desc": "4 ounces",
+                    "abbrev": "+Rib"
+                },                
+                {
+                    "id": 349,
+                    "name": "Extra Shrimp",
+                    "price": 11.95,
+                    "desc": "5 pieces",
+                    "abbrev": "+Shr"
+                },
+                {
+                    "id": 350,
+                    "name": "Extra Scallops",
+                    "price": 12.95,
+                    "desc": "2 ounces",
+                    "abbrev": "+Sc"
+                },
+                {
+                    "id": 351,
+                    "name": "Extra Lobster",
+                    "price": 17.95,
+                    "desc": "1 tail",
+                    "abbrev": "+Lob"
+                },
+                {
+                    "id": 352,
+                    "name": "Extra Filet Mignon",
+                    "price": 12.95,
+                    "desc": "4 ounces",
+                    "abbrev": "+F"
+                },
+                {
+                    "id": 344,
+                    "name": "Extra Vegatables",
+                    "price": 5.25,
+                    "desc": "Extra mushrooms, zucchini, and onions",
+                    "abbrev": "+Veg"
+                },
+                {
+                    "id": 345,
+                    "name": "Add egg",
+                    "price": 1.75,
                     "desc": "",
-                    "abbrev": ""
+                    "abbrev": "+Egg"
+                },
+                {
+                    "id": 354,
+                    "name": "Add broccoli",
+                    "price": 1.75,
+                    "desc": "",
+                    "abbrev": "+Bro"
+                },
+                {
+                    "id": 355,
+                    "name": "Add mushrooms",
+                    "price": 1.75,
+                    "desc": "",
+                    "abbrev": "+Mush"
+                },
+                {
+                    "id": 356,
+                    "name": "Add zucchini",
+                    "price": 1.75,
+                    "desc": "",
+                    "abbrev": "+Zucc"
+                },
+                {
+                    "id": 357,
+                    "name": "Add onion",
+                    "price": 1.75,
+                    "desc": "",
+                    "abbrev": "+Onion"
+                },
+                {
+                    "id": 358,
+                    "name": "Add green peppers",
+                    "price": 1.75,
+                    "desc": "",
+                    "abbrev": "+Pepper"
+                },
+                {
+                    "id": 359,
+                    "name": "Add carrot",
+                    "price": 1.75,
+                    "desc": "",
+                    "abbrev": "+Carrot"
                 }
             ]
         },
@@ -850,33 +941,186 @@
         "beverages": {
             "nonAlcohol": [
                 {
-                    "id": 300,
-                    "name": "Pepsi/Diet Pepsi",
-                    "price": 17.95
+                    "id": 400,
+                    "name": "Pepsi",
+                    "price": 2.75
+                },
+                {
+                    "id": 401,
+                    "name": "Diet Pepsi",
+                    "price": 2.75
+                },
+                {
+                    "id": 402,
+                    "name": "Mountain Dew",
+                    "price": 2.75
+                },
+                {
+                    "id": 403,
+                    "name": "Lemonade",
+                    "price": 2.75
+                },
+                {
+                    "id": 404,
+                    "name": "Dr. Pepper",
+                    "price": 2.75
+                },
+                {
+                    "id": 405,
+                    "name": "Sprite",
+                    "price": 2.75
+                },
+                {
+                    "id": 406,
+                    "name": "Root Beer",
+                    "price": 2.75,
+                    "desc": "Bottle - no refills!"
+                },
+                {
+                    "id": 407,
+                    "name": "Sweet Tea",
+                    "price": 2.75
+                },
+                {
+                    "id": 408,
+                    "name": "Unsweet Tea",
+                    "price": 2.75
+                },
+                {
+                    "id": 409,
+                    "name": "Raspberry Iced Tea",
+                    "price": 2.75
+                },
+                {
+                    "id": 410,
+                    "name": "Coffee",
+                    "price": 2.75
+                },
+                {
+                    "id": 400,
+                    "name": "Green Tea",
+                    "price": 1.50
+                },
+                {
+                    "id": 400,
+                    "name": "Strawberry Ramune",
+                    "price": 4.00,
+                    "desc": "Bottle - no refills!"
+                },
+                {
+                    "id": 400,
+                    "name": "Blue Hawaii Ramune",
+                    "price": 4.00,
+                    "desc": "Bottle - no refills!"
                 }
             ],
             "cocktails": [
                 {
-                    "id": 300,
-                    "name": "Teriyaki Chicken",
-                    "price": 17.95,
-                    "desc": "6 ounces of chicken cooked with homemade teriyaki sauce"
+                    "id": 500,
+                    "name": "Midori",
+                    "price": 6.50,
+                    "desc": "Melon liqueur with choice of rum or vodka"
+                },
+                {
+                    "id": 501,
+                    "name": "Tokyo Mary",
+                    "price": 6.50,
+                    "desc": "Sake, tomato juice, and other spices and flavorings"
+                },
+                {
+                    "id": 502,
+                    "name": "Bloody Mary",
+                    "price": 6.50,
+                    "desc": "Vodka, tomato juice, and other spices and flavorings"
+                },
+                {
+                    "id": 503,
+                    "name": "Hotei",
+                    "price": 6.50,
+                    "desc": ""
+                },
+                {
+                    "id": 504,
+                    "name": "Pina Colada",
+                    "price": 7.50,
+                    "desc": ""
+                },
+                {
+                    "id": 505,
+                    "name": "Maitai",
+                    "price": 7.50,
+                    "desc": ""
+                },
+                {
+                    "id": 506,
+                    "name": "Long Island",
+                    "price": 7.50,
+                    "desc": ""
+                },
+                {
+                    "id": 507,
+                    "name": "Strawberry Daiquiri",
+                    "price": 7.50,
+                    "desc": ""
                 }
             ],
             "beers": [
                 {
-                    "id": 300,
-                    "name": "Teriyaki Chicken",
-                    "price": 17.95,
-                    "desc": "6 ounces of chicken cooked with homemade teriyaki sauce"
+                    "id": 508,
+                    "name": "Domestic Beer",
+                    "price": 3.50,
+                    "desc": "Budlight"
+                },
+                {
+                    "id": 509,
+                    "name": "Specialty Beer",
+                    "price": 4.50
+                },
+                {
+                    "id": 510,
+                    "name": "12 oz Sapparo",
+                    "price": 4.50
+                },
+                {
+                    "id": 511,
+                    "name": "16 oz Sapparo",
+                    "price": 6.50
+                },
+                {
+                    "id": 512,
+                    "name": "22 oz Sapparo",
+                    "price": 8.50
                 }
             ],
             "wine": [
                 {
-                    "id": 300,
-                    "name": "Teriyaki Chicken",
-                    "price": 17.95,
-                    "desc": "6 ounces of chicken cooked with homemade teriyaki sauce"
+                    "id": 513,
+                    "name": "Small Sake",
+                    "price": 5.00,
+                    "desc": "4 ounces"
+                },
+                {
+                    "id": 514,
+                    "name": "Large Sake",
+                    "price": 10.00,
+                    "desc": "8 ounces"
+                },
+                {
+                    "id": 515,
+                    "name": "Red Wine",
+                    "price": 6.50,
+                    "desc": "Cabernet, Merlot (+ $1.00 for Blackstone, Gnarly Head), Red Blend, Pinot Noir"
+                },
+                {
+                    "id": 516,
+                    "name": "White Wine",
+                    "price": 6.50,
+                    "desc": "Chardonnay (+ $1.00 for Gnarly Head, Castle Rock, Black Stone), Moscato, Reisling, Sauvignon Blanc, Pinot Grigio"
+                },
+                {
+                    "id": 517,
+                    "name": "Plum Wine",
+                    "price": 6.50
                 }
             ]
         }
