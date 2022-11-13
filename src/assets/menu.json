@@ -997,18 +997,18 @@
                     "price": 2.75
                 },
                 {
-                    "id": 400,
+                    "id": 411,
                     "name": "Green Tea",
                     "price": 1.50
                 },
                 {
-                    "id": 400,
+                    "id": 412,
                     "name": "Strawberry Ramune",
                     "price": 4.00,
                     "desc": "Bottle - no refills!"
                 },
                 {
-                    "id": 400,
+                    "id": 413,
                     "name": "Blue Hawaii Ramune",
                     "price": 4.00,
                     "desc": "Bottle - no refills!"
@@ -1037,31 +1037,31 @@
                     "id": 503,
                     "name": "Hotei",
                     "price": 6.50,
-                    "desc": ""
+                    "desc": "A tropical drink (pineapple juice, sour, and grenadine) with apricot brandy and rum"
                 },
                 {
                     "id": 504,
                     "name": "Pina Colada",
                     "price": 7.50,
-                    "desc": ""
+                    "desc": "Rum, cream of coconut, and pineapple juice served frozen"
                 },
                 {
                     "id": 505,
                     "name": "Maitai",
                     "price": 7.50,
-                    "desc": ""
+                    "desc": "A tropical drink (pineapple juice, sour, and grenadine) with apricot brandy and 151 rum"
                 },
                 {
                     "id": 506,
                     "name": "Long Island",
                     "price": 7.50,
-                    "desc": ""
+                    "desc": "Sour with rum, vodka, gin"
                 },
                 {
                     "id": 507,
                     "name": "Strawberry Daiquiri",
                     "price": 7.50,
-                    "desc": ""
+                    "desc": "Rum and strawberry mix served frozen"
                 }
             ],
             "beers": [
