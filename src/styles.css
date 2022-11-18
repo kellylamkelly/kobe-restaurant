@@ -52,7 +52,7 @@ button {
 } */
 
 /* Button styles */
-button {
+.home-button {
     background-color: white;
     border: 3px solid #d01500;
     border-radius: 12px;
@@ -64,15 +64,22 @@ button {
     margin-bottom: 1rem;
 }
 
-button:hover {
+.home-button:hover {
     background-color: #eee;
     color: #d01500;
 }
 
-button:disabled {
+.home-button:disabled {
     background-color: #eee;
     color: #aaa;
     cursor: auto;
+}
+
+.menu-button {
+    grid-template-columns: 1fr;
+    display: flex;
+    padding: 1em;
+    width: 100%;
 }
 
 /* Links */
@@ -116,6 +123,59 @@ a:active {
     background-color: #d01500;
     padding: 1rem 0rem;
     color: white;
+}
+
+.menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1.5em;
+}
+
+.menu-item {
+    padding: 0.5em;
+    display: flex;
+}
+
+.menu-item-text {
+    flex-grow: 1;
+}
+
+.menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menu-item-name {
+    margin-right: 1.5em;
+}
+
+.menu-item-desc {
+    text-align: left;
+    padding-top: 1.5em;
+    line-height: 1.6;
+}
+
+.menu-item-image {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+    border-radius: 0.5em;
+}
+
+@media screen and (min-width: 992px) {
+    .menu-group {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .menu-item-image {
+        width: 125px;
+        height: 125px;
+    }
 }
 
 /* Kanji */

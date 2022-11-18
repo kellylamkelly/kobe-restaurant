@@ -1,1 +1,109 @@
-<p>order-online works!</p>
+<div class="descBlock">
+    <!-- Title -->
+    <div style="padding-bottom: 30px;">
+        <h1 style="text-align: center;">
+            ORDER ONLINE
+        </h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navigation">
+        <nav>
+            <a>
+                <h3>
+                    APPETIZERS
+                </h3>
+            </a>
+        </nav>
+
+        <span class="tab"></span>
+
+        <nav>
+            <a>
+                <h3>
+                    TEPPANYAKI
+                </h3>
+            </a>
+        </nav>
+
+        <span class="tab"></span>
+
+        <nav>
+            <a>
+                <h3>
+                    SUSHI
+                </h3>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Display Menus -->
+    <h2>APPETIZERS</h2>
+    <div class="menu-group">
+        <div *ngFor="let menu of appMenus">
+            <!-- Print the title -->
+            <h2>{{menu.label}}</h2>
+            <!-- Iterate and print the item variables corresponding to the field -->
+            <div class="menu-item" *ngFor="let subMenu of menu.field">
+                <button class="menu-button">
+                    <img class="menu-item-image" src="../assets/menuImages/appetizers/{{subMenu.image}}"
+                        alt={{subMenu.name}}>
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">{{subMenu.name}}</span>
+                            <span class="menu-item-price">${{subMenu.price.toLocaleString(undefined, {
+                                maximumFractionDigits: 2, minimumFractionDigits: 2}) }}</span>
+                        </h3>
+                        <h4 class="menu-item-desc">{{subMenu.desc}}</h4>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <h2>TEPPANYAKI</h2>
+    <div class="menu-group">
+        <div *ngFor="let menu of teppanyakiMenus">
+            <!-- Print the title -->
+            <h2>{{menu.label}}</h2>
+            <!-- Iterate and print the item variables corresponding to the field -->
+            <div class="menu-item" *ngFor="let subMenu of menu.field">
+                <button class="menu-button">
+                    <img class="menu-item-image" src="../assets/menuImages/appetizers/115.jpeg"
+                        alt={{subMenu.name}}>
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">{{subMenu.name}}</span>
+                            <span class="menu-item-price">${{subMenu.price.toLocaleString(undefined, {
+                                maximumFractionDigits: 2, minimumFractionDigits: 2}) }}</span>
+                        </h3>
+                        <h4 class="menu-item-desc">{{subMenu.desc}}</h4>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <h2>SUSHI</h2>
+    <div class="menu-group">
+        <div *ngFor="let menu of sushiMenus">
+            <!-- Print the title -->
+            <h2>{{menu.label}}</h2>
+            <!-- Iterate and print the item variables corresponding to the field -->
+            <div class="menu-item" *ngFor="let subMenu of menu.field">
+                <button class="menu-button">
+                    <img class="menu-item-image" src="../assets/menuImages/appetizers/115.jpeg"
+                        alt={{subMenu.name}}>
+                    <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">{{subMenu.name}}</span>
+                            <span class="menu-item-price">${{subMenu.price.toLocaleString(undefined, {
+                                maximumFractionDigits: 2, minimumFractionDigits: 2}) }}</span>
+                        </h3>
+                        <h4 class="menu-item-desc">{{subMenu.desc}}</h4>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

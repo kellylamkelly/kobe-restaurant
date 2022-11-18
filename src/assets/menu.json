@@ -12,7 +12,8 @@
                     "id": 115,
                     "name": "Miso Soup",
                     "price": 1.95,
-                    "desc": "Bean paste soup with mushrooms & scallions"
+                    "desc": "Bean paste soup with mushrooms & scallions",
+                    "image": "115.jpeg"
                 },
                 {
                     "id": 119,
@@ -136,7 +137,8 @@
                     "name": "Teriyaki Chicken",
                     "price": 17.95,
                     "desc": "6 ounces of chicken cooked with homemade teriyaki sauce.",
-                    "abbrev": "TC"
+                    "abbrev": "TC",
+                    "image": "115.jpeg"
                 },
                 {
                     "id": 301,
@@ -564,7 +566,8 @@
                     "id": 200,
                     "name": "Tuna",
                     "price": 2.50,
-                    "desc": "Maguro"
+                    "desc": "Maguro",
+                    "image": "115.jpeg"
                 },
                 {
                     "id": 201,
