@@ -6,8 +6,8 @@ import menuJson from 'src/assets/menu.json';
   templateUrl: './order-online.component.html',
   styleUrls: ['./order-online.component.css']
 })
-export class OrderOnlineComponent implements OnInit {
 
+export class OrderOnlineComponent implements OnInit {
   appMenus = [
     {label: "SOUP & SALADS", field: menuJson.menu.appetizers.soupAndSalads},
     {label: "APPETIZERS", field: menuJson.menu.appetizers.apps}, 
@@ -34,5 +34,4 @@ export class OrderOnlineComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

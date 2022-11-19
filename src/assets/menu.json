@@ -6,7 +6,8 @@
                     "id": 114,
                     "name": "House Soup",
                     "price": 1.95,
-                    "desc": "Clear chicken broth with mushrooms & scallions"
+                    "desc": "Clear chicken broth with mushrooms & scallions",
+                    "image": "114.png"
                 },
                 {
                     "id": 115,
@@ -56,7 +57,8 @@
                     "id": 100,
                     "name": "Edamame",
                     "price": 4.25,
-                    "desc": "Lightly boiled and salted soybeans"
+                    "desc": "Lightly boiled and salted soybeans",
+                    "image": "100.png"
                 },
                 {
                     "id": 101,
@@ -138,7 +140,7 @@
                     "price": 17.95,
                     "desc": "6 ounces of chicken cooked with homemade teriyaki sauce.",
                     "abbrev": "TC",
-                    "image": "115.jpeg"
+                    "image": "100.png"
                 },
                 {
                     "id": 301,
