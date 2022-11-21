@@ -9,6 +9,7 @@ import menuJson from 'src/assets/menu.json';
 export class TeppanyakiComponent implements OnInit {
   menus = [
     {label: "SINGLE CHOICE", field: menuJson.menu.teppanyaki.singles},
+    {label: "STEAKS", field: menuJson.menu.teppanyaki.steaks},
     {label: "SENIOR & CHILDREN", field: menuJson.menu.teppanyaki.seniorAndChildren}, 
     {label: "SUMO CHOICE", field: menuJson.menu.teppanyaki.sumos}, 
     {label: "DOUBLE CHOICE", field: menuJson.menu.teppanyaki.doubles},

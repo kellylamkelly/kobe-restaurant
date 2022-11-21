@@ -184,7 +184,8 @@
                     "name": "Ribeye",
                     "price": 17.95,
                     "desc": "7 ounces of cut ribeye steak.",
-                    "abbrev": "Rib"
+                    "abbrev": "Rib",
+                    "image": "100.png"
                 },
                 {
                     "id": 307,
@@ -221,7 +222,8 @@
                     "name": "Teriyaki Chicken",
                     "price": 15.95,
                     "desc": "4 ounces of teriyaki chicken.",
-                    "abbrev": "Sm TC"
+                    "abbrev": "Sm TC",
+                    "image": "100.png"
                 },
                 {
                     "id": 314,
@@ -258,7 +260,8 @@
                     "name": "Sumo Teriyaki Chicken",
                     "price": 26.95,
                     "desc": "12 ounces of teriyaki chicken.",
-                    "abbrev": "Sumo TC"
+                    "abbrev": "Sumo TC",
+                    "image": "100.png"
                 },
                 {
                     "id": 342,
@@ -281,7 +284,8 @@
                     "name": "Teriyaki Chicken & Lobster",
                     "price": 33.95,
                     "desc": "4 ounces of teriyaki chicken and one lobster tail.",
-                    "abbrev": "TC/Lob"
+                    "abbrev": "TC/Lob",
+                    "image": "100.png"
                 },
                 {
                     "id": 317,
@@ -395,7 +399,8 @@
                     "name": "Teriyaki Chicken, Shrimp, & Ribeye",
                     "price": 33.95,
                     "desc": "",
-                    "abbrev": "TC/Shr/Rib"
+                    "abbrev": "TC/Shr/Rib",
+                    "image": "100.png"
                 },
                 {
                     "id": 332,
@@ -467,7 +472,8 @@
                     "name": "Extra Teriyaki Chicken",
                     "price": 11.95,
                     "desc": "6 ounces",
-                    "abbrev": "+TC"
+                    "abbrev": "+TC",
+                    "image": "100.png"
                 },
                 {
                     "id": 348,
@@ -679,7 +685,8 @@
                     "id": 218,
                     "name": "Alaska Roll",
                     "price": 5.95,
-                    "desc": "Smoked salmon, avocado, cucumber, and sesame seeds"
+                    "desc": "Smoked salmon, avocado, cucumber, and sesame seeds",
+                    "image": "115.jpeg"
                 },
                 {
                     "id": 219,
