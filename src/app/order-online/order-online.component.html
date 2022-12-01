@@ -37,6 +37,16 @@
         </nav>
     </div>
 
+    <!-- Modal -->
+    <!-- <button id="appModalButton" class="menu-button">Open Modal</button>
+
+    <div id="appModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Example text...</p>
+        </div>
+    </div> -->
+
     <!-- Display Menus -->
     <h2>APPETIZERS</h2>
     <div class="menu-group">
@@ -46,9 +56,10 @@
             <!-- Iterate and print the item variables corresponding to the field -->
             <div class="menu-item" *ngFor="let subMenu of menu.field">
                 <button class="menu-button">
+                    <input type="hidden" name="id" value="{{subMenu.id}}" />
                     <div *ngIf="subMenu.image">
                         <img class="menu-item-image" src="../assets/menuImages/appetizers/{{subMenu.image}}"
-                        alt={{subMenu.name}}>
+                            alt={{subMenu.name}}>
                     </div>
                     <div class="menu-item-text">
                         <h3 class="menu-item-heading">
@@ -73,7 +84,7 @@
                 <button class="menu-button">
                     <div *ngIf="subMenu.image">
                         <img class="menu-item-image" src="../assets/menuImages/appetizers/{{subMenu.image}}"
-                        alt={{subMenu.name}}>
+                            alt={{subMenu.name}}>
                     </div>
                     <div class="menu-item-text">
                         <h3 class="menu-item-heading">
@@ -98,7 +109,7 @@
                 <button class="menu-button">
                     <div *ngIf="subMenu.image">
                         <img class="menu-item-image" src="../assets/menuImages/appetizers/{{subMenu.image}}"
-                        alt={{subMenu.name}}>
+                            alt={{subMenu.name}}>
                     </div>
                     <div class="menu-item-text">
                         <h3 class="menu-item-heading">
