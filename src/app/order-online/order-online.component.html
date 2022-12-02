@@ -9,7 +9,7 @@
     <!-- Navigation Bar -->
     <div class="navigation">
         <nav>
-            <a>
+            <a routerLink="/order/appetizers">
                 <h3>
                     APPETIZERS
                 </h3>
@@ -19,7 +19,7 @@
         <span class="tab"></span>
 
         <nav>
-            <a>
+            <a routerLink="/order/teppanyaki">
                 <h3>
                     TEPPANYAKI
                 </h3>
@@ -29,13 +29,26 @@
         <span class="tab"></span>
 
         <nav>
-            <a>
+            <a routerLink="/order/sushi">
                 <h3>
                     SUSHI
                 </h3>
             </a>
         </nav>
+
+        <span class="tab"></span>
+
+        <nav>
+            <a routerLink="/order/cart">
+                <h3>
+                    CART
+                </h3>
+            </a>
+        </nav>
     </div>
+
+    <!-- Display selected menu -->
+    <router-outlet></router-outlet>
 
     <!-- Modal -->
     <!-- <button id="appModalButton" class="menu-button">Open Modal</button>
@@ -47,80 +60,4 @@
         </div>
     </div> -->
 
-    <!-- Display Menus -->
-    <h2>APPETIZERS</h2>
-    <div class="menu-group">
-        <div *ngFor="let menu of appMenus">
-            <!-- Print the title -->
-            <h2>{{menu.label}}</h2>
-            <!-- Iterate and print the item variables corresponding to the field -->
-            <div class="menu-item" *ngFor="let subMenu of menu.field">
-                <button class="menu-button">
-                    <input type="hidden" name="id" value="{{subMenu.id}}" />
-                    <div *ngIf="subMenu.image">
-                        <img class="menu-item-image" src="../assets/menuImages/appetizers/{{subMenu.image}}"
-                            alt={{subMenu.name}}>
-                    </div>
-                    <div class="menu-item-text">
-                        <h3 class="menu-item-heading">
-                            <span class="menu-item-name">{{subMenu.name}}</span>
-                            <span class="menu-item-price">${{subMenu.price.toLocaleString(undefined, {
-                                maximumFractionDigits: 2, minimumFractionDigits: 2}) }}</span>
-                        </h3>
-                        <h4 class="menu-item-desc">{{subMenu.desc}}</h4>
-                    </div>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <h2>TEPPANYAKI</h2>
-    <div class="menu-group">
-        <div *ngFor="let menu of teppanyakiMenus">
-            <!-- Print the title -->
-            <h2>{{menu.label}}</h2>
-            <!-- Iterate and print the item variables corresponding to the field -->
-            <div class="menu-item" *ngFor="let subMenu of menu.field">
-                <button class="menu-button">
-                    <div *ngIf="subMenu.image">
-                        <img class="menu-item-image" src="../assets/menuImages/appetizers/{{subMenu.image}}"
-                            alt={{subMenu.name}}>
-                    </div>
-                    <div class="menu-item-text">
-                        <h3 class="menu-item-heading">
-                            <span class="menu-item-name">{{subMenu.name}}</span>
-                            <span class="menu-item-price">${{subMenu.price.toLocaleString(undefined, {
-                                maximumFractionDigits: 2, minimumFractionDigits: 2}) }}</span>
-                        </h3>
-                        <h4 class="menu-item-desc">{{subMenu.desc}}</h4>
-                    </div>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <h2>SUSHI</h2>
-    <div class="menu-group">
-        <div *ngFor="let menu of sushiMenus">
-            <!-- Print the title -->
-            <h2>{{menu.label}}</h2>
-            <!-- Iterate and print the item variables corresponding to the field -->
-            <div class="menu-item" *ngFor="let subMenu of menu.field">
-                <button class="menu-button">
-                    <div *ngIf="subMenu.image">
-                        <img class="menu-item-image" src="../assets/menuImages/appetizers/{{subMenu.image}}"
-                            alt={{subMenu.name}}>
-                    </div>
-                    <div class="menu-item-text">
-                        <h3 class="menu-item-heading">
-                            <span class="menu-item-name">{{subMenu.name}}</span>
-                            <span class="menu-item-price">${{subMenu.price.toLocaleString(undefined, {
-                                maximumFractionDigits: 2, minimumFractionDigits: 2}) }}</span>
-                        </h3>
-                        <h4 class="menu-item-desc">{{subMenu.desc}}</h4>
-                    </div>
-                </button>
-            </div>
-        </div>
-    </div>
 </div>
