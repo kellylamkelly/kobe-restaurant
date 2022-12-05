@@ -5,5 +5,9 @@
 }
 
 #homeDesc {
-    padding: 2% 10%;
+    padding: 1rem;
+}
+
+#viewMenuBtn {
+    padding: 2rem;
 }

@@ -1,0 +1,33 @@
+<div class="container">
+    <div *ngIf="menu.image">
+        <img src="/assets/images/menu/{{menu.image}}" alt="{{menu.name}}">
+    </div>
+
+
+    <div class="item-details">
+        <div class="item-header">
+            <span class="item-name">
+                {{menu.name}}
+            </span>
+        </div>
+
+        <div class="item-price">
+            <span>
+                {{menu.price | currency}}
+            </span>
+        </div>
+
+        <div class="item-desc">
+            <h3>
+                {{menu.desc}}
+            </h3>
+        </div>
+
+        <!-- TO DO: Input for Special Instructions -->
+        <!-- <div class="item-instructions">
+            <input>
+        </div> -->
+
+        <button>Add To Cart</button>
+    </div>
+</div>

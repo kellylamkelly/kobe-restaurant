@@ -1,0 +1,38 @@
+#item-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1.5em;
+}
+
+@media screen and (min-width: 1080px) {
+    #item-group {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (min-width: 1620px) {
+    #item-group {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+#navAnchor {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 4rem;
+}

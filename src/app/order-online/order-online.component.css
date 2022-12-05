@@ -1,0 +1,28 @@
+/* #itemCartView {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1.5em;
+}
+
+@media screen and (min-width: 1080px) {
+    #itemCartView {
+        grid-template-columns: none;
+        display: flex;
+    }
+
+    #items {
+        width: 70%;
+    }
+
+    #cart {
+        width: 30%;
+    }
+}
+
+#cart {
+    background-color: tan;
+}
+
+#items {
+    background-color: lavender;
+} */

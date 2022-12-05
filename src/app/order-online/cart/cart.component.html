@@ -1,1 +1,9 @@
-<p>cart works!</p>
+<ul>
+    <li *ngFor="let cartItem of cart.items">
+        <div>
+            <img [src]="cartItem.menu.image" [alt]="cartItem.menu.name">
+        </div>
+    </li>
+</ul>
+
+cart comp works

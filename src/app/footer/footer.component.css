@@ -1,0 +1,14 @@
+#footer {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#footerText {
+    background-color: #d01500;
+    padding: 4rem 0rem;
+    color: white;
+}
+
+#copyright {
+    padding-top: 1rem;
+}

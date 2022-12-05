@@ -20,7 +20,7 @@ import { FooterComponent } from './footer/footer.component';
     ReservationsComponent,
     MenuComponent,
     HeaderComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

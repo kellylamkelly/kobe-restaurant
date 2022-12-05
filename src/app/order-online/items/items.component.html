@@ -1,0 +1,45 @@
+<div id="navAnchor">
+    <button (click)="scrollToElement(anchorApps)">Appetizers</button>
+    <button (click)="scrollToElement(anchorTepp)">Teppanyaki</button>
+    <button (click)="scrollToElement(anchorCombos)">Combos</button>
+    <button (click)="scrollToElement(anchorNigiri)">Nigiri</button>
+    <button (click)="scrollToElement(anchorRolls)">Sushi Rolls</button>
+    <button (click)="scrollToElement(anchorSushiDinners)">Sushi Entr&#233;es</button>
+</div>
+
+<h2 #anchorApps>Appetizers</h2>
+<!-- Display Appetizers -->
+<div id="item-group">
+    <div class="menu-item" *ngFor="let item of menus">
+        <button routerLink="/order/item/{{item.id}}" class="menu-button">
+            <div *ngIf="item.image">
+                <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
+            </div>
+            <div class="menu-item-text">
+                <h3 class="menu-item-heading">
+                    <span class="menu-item-name">{{item.name}}</span>
+                    <span class="menu-item-price">{{item.price|currency}}</span>
+                </h3>
+                <h4 class="menu-item-desc">{{item.desc}}</h4>
+            </div>
+        </button>
+        <!-- <app-modal [id]="item.id"></app-modal> -->
+    </div>
+</div>
+
+<h2 #anchorTepp>Teppanyaki</h2>
+<!-- Display Teppanyaki -->
+
+<h2 #anchorCombos>Combos</h2>
+<!-- Display Combos -->
+
+<h2 #anchorNigiri>Nigiri</h2>
+<!-- Display Nigiri -->
+
+<h2 #anchorRolls>Sushi Rolls</h2>
+<!-- Display Sushi -->
+
+<h2 #anchorSushiDinners>Sushi Entr&#233;es</h2>
+<!-- Display Sushi -->
+
+<!-- <app-modal></app-modal> -->
