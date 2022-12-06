@@ -16,9 +16,10 @@ export class CartService {
   addToCart(menu: Menu): void {
     let cartItem = this.cart.items.find(item => item.menu.id === menu.id);
     if (cartItem) {
+      this.changeQuantity(cartItem.menu.id, cartItem.quantity + 1);
       return;
     }
-    
+
     this.cart.items.push(new CartItem(menu));
     this.setCartToLocalStorage();
   }

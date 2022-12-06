@@ -52,61 +52,18 @@ button {
 } */
 
 /* Button styles */
-.home-button {
-    background-color: white;
-    border: 3px solid #d01500;
-    border-radius: 12px;
-    cursor: pointer;
-    color: #d01500;
-    font-size: 1.2rem;
-    padding: 0.8rem 1.8rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.home-button:hover {
-    background-color: #eee;
-    color: #d01500;
-}
-
-.home-button:disabled {
-    background-color: #eee;
-    color: #aaa;
-    cursor: auto;
-}
 
 .menu-button {
     grid-template-columns: 1fr;
     display: flex;
     padding: 1em;
     width: 100%;
+    cursor: pointer;
 }
 
 /* Links/Lists */
 li a:hover{
     cursor: pointer;
-}
-
-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
-    
-}
-
-ul li a{
-    height: 20rem;
-    width: 20rem;
-    border: 1px solid whitesmoke;
-    border-radius: 1rem;
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    color: #e72929;
 }
 
 a {
@@ -180,7 +137,7 @@ a:active {
     border-radius: 0.5em;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1080px) {
     .menu-group {
         grid-template-columns: repeat(2, 1fr);
         padding-left: 12%;
@@ -191,14 +148,6 @@ a:active {
         width: 125px;
         height: 125px;
     }
-}
-
-/* Kanji */
-.kanji {
-    color: #d01500;
-    font-family: "Lora", Arial, Helvetica, sans-serif;
-    font-size: 250%;
-    font-weight: bold;
 }
 
 /* Images */

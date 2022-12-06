@@ -1,8 +1,14 @@
-<div class="container">
-    <div *ngIf="menu.image">
-        <img src="/assets/images/menu/{{menu.image}}" alt="{{menu.name}}">
-    </div>
+<app-not-found 
+    [visible]="!menu"
+    notFoundMessage="Sorry, we couldn't find this item."
+    resetLinkText="Back to Menu">
+</app-not-found>
 
+<div *ngIf="menu" class="container">
+
+    <div *ngIf="menu.image" class="imgBlock">
+        <img class="imgStyle" src="/assets/images/menu/{{menu.image}}" alt="{{menu.name}}">
+    </div>
 
     <div class="item-details">
         <div class="item-header">

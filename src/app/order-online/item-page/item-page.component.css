@@ -11,12 +11,16 @@
     max-width: 40rem;
 }
 
-img {
+/* img {
     border-radius: 3rem;
     flex: 1 0;
     object-fit: cover;
     height: 35rem;
     margin: 1rem;
+} */
+
+.imgStyle {
+    height: 400px;
 }
 
 .item-details {
@@ -43,11 +47,11 @@ img {
 }
 
 button {
-    background: #d01500;
-    border: none;
+    background-color: white;
+    border: 3px solid #d01500;
     border-radius: 12px;
     cursor: pointer;
-    color: white;
+    color: #d01500;
     font-size: 1.2rem;
     padding: 0.8rem 1.8rem;
     margin-top: 0.5rem;
@@ -55,6 +59,8 @@ button {
 }
 
 button:hover {
-    opacity: 0.9;
+    background-color: #d01500;
+    color: white;
     cursor: pointer;
+    text-decoration: none;
 }

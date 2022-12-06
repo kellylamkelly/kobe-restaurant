@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../services/cart/cart.service';
 
 @Component({
   selector: 'app-order-online',
@@ -8,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 
 export class OrderOnlineComponent implements OnInit {
 
-  constructor() { }
+  cartQuantity = 0;
+
+  constructor(cartService: CartService) {
+    cartService.getCartObservable().subscribe((newCart) => {
+      this.cartQuantity = newCart.totalCount;
+    })
+  }
 
   ngOnInit(): void {
   }

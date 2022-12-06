@@ -1,15 +1,21 @@
 <h2>Cart</h2>
 
-<div class="container">
+<app-not-found 
+    [visible]="!cart || !cart.items.length"
+    notFoundMessage="Your cart is empty!"
+    resetLinkText="Go to Menu">
+</app-not-found>
+
+<div *ngIf="cart && cart.items.length" class="container">
     <ul>
         <li *ngFor="let cartItem of cart.items">
             <div>
                 <img src="/assets/images/menu/{{cartItem.menu.image}}" alt="{{cartItem.menu.name}}">
             </div>
             <div>
-                <!-- <a routerLink="/order/item/{{cartItem.menu.id}}"> -->
+                <a routerLink="/order/item/{{cartItem.menu.id}}">
                     {{cartItem.menu.name}}
-                <!-- </a> -->
+                </a>
             </div>
             <div>
                 <select #quantitySelect [value]="cartItem.quantity"
@@ -37,8 +43,8 @@
 
     <div class="checkout">
         <div>
-            <div class="item-count">Total items: {{cart.totalCount}}</div>
-            <div class="total-price">Total: {{cart.totalPrice | currency}}</div>
+            <div class="item-count">{{cart.totalCount}}</div>
+            <div class="total-price">{{cart.totalPrice | currency}}</div>
         </div>
 
         <a routerLink="/checkout">Proceed to Checkout</a>
