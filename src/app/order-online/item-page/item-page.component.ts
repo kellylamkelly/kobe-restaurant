@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CartService } from 'src/app/services/cart/cart.service';
 import { MenuService } from 'src/app/services/menu/menu.service';
 import { Menu } from 'src/app/shared/models/Menu';
 
@@ -11,7 +12,8 @@ import { Menu } from 'src/app/shared/models/Menu';
 export class ItemPageComponent implements OnInit {
   menu!: Menu;
 
-  constructor(activatedRoute: ActivatedRoute, menuService: MenuService) { 
+  constructor(activatedRoute: ActivatedRoute, menuService: MenuService,
+    private cartService: CartService, private router: Router) { 
     activatedRoute.params.subscribe((params) => {
       if (params['id'])
       this.menu = menuService.getItemByID(Number(params['id']));
@@ -21,4 +23,8 @@ export class ItemPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addToCart() {
+    this.cartService.addToCart(this.menu);
+    this.router.navigateByUrl('/order/cart');
+  }
 }

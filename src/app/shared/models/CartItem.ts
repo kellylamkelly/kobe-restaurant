@@ -1,14 +1,9 @@
 import { Menu } from "./Menu";
 
 export class CartItem {
-    constructor(menu: Menu){
-        this.menu = menu;
+    constructor(public menu: Menu){
     }
-
-    menu: Menu;
+    
     quantity: number = 1;
-
-    get price(): number {
-        return this.menu.price * this.quantity;
-    }
+    price: number = this.menu.price;
 }

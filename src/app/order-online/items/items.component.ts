@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuService } from 'src/app/services/menu/menu.service';
 import { Menu } from 'src/app/shared/models/Menu';
-import { CartService } from 'src/app/services/cart/cart.service';
 
 @Component({
   selector: 'app-items',
@@ -19,14 +18,7 @@ export class ItemsComponent implements OnInit {
   // Array to store menu items
   menus: Menu[] = []
 
-  // Var to add to cart
-  item!: Menu;
-
-  constructor(private menuService: MenuService, private cartService: CartService) { }
-
-  addToCart() {
-    this.cartService.addToCart(this.item);
-  }
+  constructor(private menuService: MenuService) { }
 
   ngOnInit(): void {
     // Import all menu items
