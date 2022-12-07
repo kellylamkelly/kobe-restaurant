@@ -38,3 +38,19 @@
 .sticky + .content {
     padding-top: 4rem;
 }
+
+.menu-button {
+    grid-template-columns: 1fr;
+    display: flex;
+    padding: 1em;
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 0.5rem;
+}
+
+.menu-button:hover {
+    border: 2px solid #d01500;
+    color: #d01500;
+}

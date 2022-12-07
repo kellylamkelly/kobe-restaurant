@@ -18,6 +18,10 @@
     width: 60%;
 }
 
+a {
+    text-decoration-line: none;
+}
+
 #right-box {
     float: right;
     width: 17%;

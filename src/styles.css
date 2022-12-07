@@ -51,16 +51,6 @@ button {
     font-family: Cambria, Georgia, serif;
 } */
 
-/* Button styles */
-
-.menu-button {
-    grid-template-columns: 1fr;
-    display: flex;
-    padding: 1em;
-    width: 100%;
-    cursor: pointer;
-}
-
 /* Links/Lists */
 li a:hover{
     cursor: pointer;

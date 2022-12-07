@@ -11,6 +11,7 @@ import { HeaderComponent } from './partials/header/header.component';
 import { FooterComponent } from './partials/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavBarComponent } from './partials/nav-bar/nav-bar.component';
+import { OrderNavBarComponent } from './partials/order-nav-bar/order-nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavBarComponent } from './partials/nav-bar/nav-bar.component';
     MenuComponent,
     HeaderComponent,
     FooterComponent,
-    NavBarComponent
+    NavBarComponent,
+    OrderNavBarComponent
   ],
   imports: [
     BrowserModule,
