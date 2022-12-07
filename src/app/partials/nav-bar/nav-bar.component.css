@@ -1,0 +1,17 @@
+.content {
+    padding: 1rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 4rem;
+}
+
+#navBar {
+    background-color: white;
+}
