@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Menu } from 'src/app/shared/models/Menu';
 import { Observable } from 'rxjs';
-import { appetizers, combos, nigiri, sushiEntrees, sushiRolls, teppanyaki } from 'src/data';
 import { MENU_APPS_URL, MENU_COMBOS_URL, MENU_ID_URL, MENU_NIGIRI_URL, MENU_SUSHIENTREES_URL, MENU_SUSHIROLLS_URL, MENU_TEPP_URL, MENU_URL } from 'src/app/shared/constants/urls';
 
 @Injectable({

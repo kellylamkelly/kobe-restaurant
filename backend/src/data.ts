@@ -15,9 +15,13 @@ export const appetizers: any[] = [
     },
     {
         id: 119,
-        name: "One Quart Soup (Takeout only)",
-        price: 7.00,
-        desc: "Choice of Miso or House soup"
+        name: "One Quart House Soup",
+        price: 7.00
+    },
+    {
+        id: 120,
+        name: "One Quart Miso Soup",
+        price: 7.00
     },
     {
         id: 116,
@@ -117,7 +121,13 @@ export const appetizers: any[] = [
     },
     {
         id: 118,
-        name: "Fried/Steamed Rice",
+        name: "Fried Rice",
+        price: 4.25,
+        desc: "One serving of plain rice"
+    },
+    {
+        id: 121,
+        name: "Steamed Rice",
         price: 4.25,
         desc: "One serving of plain rice"
     }
