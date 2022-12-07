@@ -10,7 +10,8 @@ header {
     position: relative;
     background: white;
     padding: 1em 1em 0.5em 1em;
-    border-bottom: 1px solid #d01500;
+    box-shadow: 0 1px 10px #d01500;
+    /* border-bottom: 1px solid #d01500; */
 }
 
 .container {
