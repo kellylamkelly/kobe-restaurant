@@ -5,6 +5,7 @@ import { PickupOrderComponent } from './pickup-order.component';
 import { CartComponent } from './cart/cart.component';
 import { ItemsComponent } from './items/items.component';
 import { ItemPageComponent } from './item-page/item-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: 'menu', component: ItemsComponent},
       { path: 'menu/:id', component: ItemPageComponent},
       { path: 'cart', component: CartComponent },
+      { path: 'login', component: LoginPageComponent },
     ]
   },
 ];
