@@ -8,6 +8,7 @@ header {
     flex-direction: row; 
     justify-content: center; 
     align-items: center;
+    padding-top: 2em;
 }
 
 #left-box {

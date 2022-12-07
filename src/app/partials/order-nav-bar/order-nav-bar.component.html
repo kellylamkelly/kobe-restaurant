@@ -1,27 +1,62 @@
 <header>
-    <div id="left-box">
-        <div class="kanji">
-            神
-        </div>
-        <div class="kanji">
-            戸
-        </div>
-    </div>
-
-    <div id="middle-box">
-        <a routerLink="/home">
-            <div id="title">
-                Kobe
+    <div class="container">
+        <div id="logo">
+            <div id="left-box">
+                <div class="kanji">
+                    神
+                </div>
+                <div class="kanji">
+                    戸
+                </div>
             </div>
-        </a>
-    </div>
 
-    <div id="right-box">
-        <div class="kanji">
-            料
+            <div id="middle-box">
+                <a routerLink="/home">
+                    <div id="title">
+                        Kobe
+                    </div>
+                </a>
+            </div>
+
+            <div id="right-box">
+                <div class="kanji">
+                    料
+                </div>
+                <div class="kanji">
+                    亭
+                </div>
+            </div>
         </div>
-        <div class="kanji">
-            亭
-        </div>
+
+        <nav>
+            <ul>
+                <!-- Link to menu -->
+                <li>
+                    <a class="nav-link" routerLink="/order/menu">Menu</a>
+                </li>
+
+                <!-- Link to login -->
+                <li>
+                    <a class="nav-link" routerLink="/login">Login</a>
+                </li>
+
+                <!-- Link to user dashboard -->
+                <li class="menu-container">
+                    <a class="nav-link" routerLink="/dashboard">John</a>
+                    <div class="menu">
+                        <a class="nav-link" routerLink="/profile">Profile</a>
+                        <a class="nav-link" routerLink="orders">Orders</a>
+                        <a class="nav-link">Logout</a>
+                    </div>
+                </li>
+
+                <!-- Link to cart -->
+                <li>
+                    <a class="nav-link" routerLink="/order/cart">
+                        Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>

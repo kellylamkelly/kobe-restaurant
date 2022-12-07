@@ -1,28 +1,7 @@
+<!-- Header/Nav Bar -->
 <app-order-nav-bar></app-order-nav-bar>
 
+<!-- Display views -->
 <div class="descBlock">
-    <div class="navigation">
-        <nav>
-            <a routerLink="/order/menu">
-                <h3>
-                    MENU
-                </h3>
-            </a>
-        </nav>
-
-        <span class="tab"></span>
-
-        <nav>
-            <a routerLink="/order/cart">
-                <h3>
-                    CART <span *ngIf="cartQuantity">{{cartQuantity}}</span>
-                </h3>
-            </a>
-        </nav>
-
-        <span class="tab"></span>
-    </div>
-
     <router-outlet></router-outlet>
-
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/services/cart/cart.service';
 
 @Component({
   selector: 'app-order-nav-bar',
@@ -6,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-nav-bar.component.css']
 })
 export class OrderNavBarComponent implements OnInit {
+  
+  cartQuantity = 0;
 
-  constructor() { }
+  constructor(cartService: CartService) {
+    cartService.getCartObservable().subscribe((newCart) => {
+      this.cartQuantity = newCart.totalCount;
+    })
+  }
 
   ngOnInit(): void {
   }
