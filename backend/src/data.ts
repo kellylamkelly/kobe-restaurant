@@ -763,3 +763,20 @@ export const sushiEntrees: any[] = [
         desc: "10 pieces of yellowfin tuna on a bed of rice with sesame seeds and teriyaki sauce"
     }
 ]
+
+export const sample_users: any[] = [
+    {
+        name: "John Doe",
+        email: "john@gmail.com",
+        password: "12345",
+        address: "Toronto On",
+        isAdmin: true,
+    },
+    {
+        name: "Jane Doe",
+        email: "jane@gmail.com",
+        password: "12345",
+        address: "Shanghai",
+        isAdmin: false,
+    },
+];
