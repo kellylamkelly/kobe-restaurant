@@ -1,5 +1,10 @@
-<div class="descBlock">
+<!-- Main header -->
+<app-header></app-header>
 
+<!-- Nav Bar -->
+<app-nav-bar></app-nav-bar>
+
+<div class="descBlock">
     <!-- Title -->
     <div style="padding-bottom: 30px;">
         <h1 style="text-align: center;">
@@ -7,28 +12,22 @@
         </h1>
     </div>
 
-    <div class="navigation">
-        <nav>
-            <a routerLink="/order/menu">
-                <h3>
-                    MENU
-                </h3>
-            </a>
-        </nav>
-
-        <span class="tab"></span>
-
-        <nav>
-            <a routerLink="/order/cart">
-                <h3>
-                    CART <span *ngIf="cartQuantity">{{cartQuantity}}</span>
-                </h3>
-            </a>
-        </nav>
-
-        <span class="tab"></span>
+    <div id="order-online-message">
+        <h3>{{orderOnlineMessage}}</h3>
     </div>
 
-    <router-outlet></router-outlet>
+    <!-- Pickup -->
+    <div id="pickup-button">
+        <button class="select-button" routerLink="/order/menu">PICK UP</button>
+    </div>
 
+    <!-- Delivery -->
+    <div id="delivery-button">
+        <button disabled class="select-button">DELIVERY</button>
+    </div>
+</div>
+
+<!-- Sushi Image -->
+<div class="imgBlock">
+    <img class="imgStyle" src="../assets/images/other/sushi.jpg" alt="Sushi">
 </div>

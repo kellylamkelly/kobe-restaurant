@@ -1,7 +1,33 @@
-a span {
+#order-online-message {
+    padding-bottom: 2rem;
+}
+
+div a {
+    text-decoration: none;
+}
+
+.select-button {
+    background-color: white;
+    border: 3px solid #d01500;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #d01500;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.select-button:hover {
     background-color: #d01500;
     color: white;
-    padding: 0.1rem 0.45rem;
-    border-radius: 100rem;
-    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.select-button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+    border: 3px solid #aaa;
 }
