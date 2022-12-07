@@ -11,7 +11,7 @@ const routes: Routes = [
     path: '', component: OrderOnlineComponent, children: [
       { path: '', redirectTo: 'menu', pathMatch: 'full' },
       { path: 'menu', component: ItemsComponent},
-      { path: 'item/:id', component: ItemPageComponent},
+      { path: 'menu/:id', component: ItemPageComponent},
       { path: 'cart', component: CartComponent },
     ]
   },

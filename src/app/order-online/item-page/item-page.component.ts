@@ -13,10 +13,13 @@ export class ItemPageComponent implements OnInit {
   menu!: Menu;
 
   constructor(activatedRoute: ActivatedRoute, menuService: MenuService,
-    private cartService: CartService, private router: Router) { 
+    private cartService: CartService, private router: Router) {
+      
     activatedRoute.params.subscribe((params) => {
       if (params['id'])
-      this.menu = menuService.getItemByID(Number(params['id']));
+        menuService.getItemByID(Number(params['id'])).subscribe(serverMenu => {
+          this.menu = serverMenu;
+        });
     })
   }
 

@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'location', component: HoursLocationComponent },
   { path: 'menu', loadChildren: () => import('./menu/menu.module').then(m => m.MenuModule) },
   { path: 'order', loadChildren: () => import('./order-online/order-online.module').then(m => m.OrderOnlineModule) },
-  { path: 'reservations', component: ReservationsComponent},
+  // { path: 'reservations', component: ReservationsComponent},
 ];
 
 @NgModule({

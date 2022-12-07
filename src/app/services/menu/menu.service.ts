@@ -1,39 +1,45 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Menu } from 'src/app/shared/models/Menu';
+import { Observable } from 'rxjs';
+import { appetizers, combos, nigiri, sushiEntrees, sushiRolls, teppanyaki } from 'src/data';
+import { MENU_APPS_URL, MENU_COMBOS_URL, MENU_ID_URL, MENU_NIGIRI_URL, MENU_SUSHIENTREES_URL, MENU_SUSHIROLLS_URL, MENU_TEPP_URL, MENU_URL } from 'src/app/shared/constants/urls';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getItemByID(id: number): Menu {
-    return this.getAll().find(menu => menu.id == id)!;
+  getAll(): Observable<Menu[]> {
+    return this.http.get<Menu[]>(MENU_URL);
+  }
+  
+  getItemByID(id: number): Observable<Menu> {
+    return this.http.get<Menu>(MENU_ID_URL + id);
   }
 
-  getAll(): Menu[] {
-    return [
-      {
-        id: 114,
-        name: "House Soup",
-        price: 1.95,
-        desc: "Clear chicken broth with mushrooms & scallions",
-        image: "114.png"
-      },
-      {
-        id: 115,
-        name: "Miso Soup",
-        price: 1.95,
-        desc: "Bean paste soup with mushrooms & scallions",
-        image: "115.jpeg"
-      },
-      {
-        id: 100,
-        name: "Edamame",
-        price: 4.25,
-        desc: "Lightly boiled and salted soybeans",
-        image: "100.png"
-      }
-    ]
+  getApps(): Observable<Menu[]> {
+    return this.http.get<Menu[]>(MENU_APPS_URL);
+  }
+
+  getTepp(): Observable<Menu[]> {
+    return this.http.get<Menu[]>(MENU_TEPP_URL);
+  }
+
+  getCombos(): Observable<Menu[]> {
+    return this.http.get<Menu[]>(MENU_COMBOS_URL);
+  }
+
+  getNigiri(): Observable<Menu[]> {
+    return this.http.get<Menu[]>(MENU_NIGIRI_URL);
+  }
+
+  getRolls(): Observable<Menu[]> {
+    return this.http.get<Menu[]>(MENU_SUSHIROLLS_URL);
+  }
+
+  getSushiEntrees(): Observable<Menu[]> {
+    return this.http.get<Menu[]>(MENU_SUSHIENTREES_URL);
   }
 }
