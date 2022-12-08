@@ -6,8 +6,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
-*NOTE*: Run another terminal alongside (split terminal) then cd backend and run `npm start` to start the backend server.
-
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

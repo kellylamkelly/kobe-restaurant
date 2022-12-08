@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CartService } from 'src/app/services/cart/cart.service';
-import { MenuService } from 'src/app/services/menu/menu.service';
+import { CartService } from 'src/app/services/cart.service';
+import { MenuService } from 'src/app/services/menu.service';
 import { Menu } from 'src/app/shared/models/Menu';
 
 @Component({

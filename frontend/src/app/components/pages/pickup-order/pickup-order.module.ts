@@ -7,10 +7,10 @@ import { ItemPageComponent } from './item-page/item-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { InputContainerComponent } from '../partials/input-container/input-container.component';
-import { InputValidationComponent } from '../partials/input-validation/input-validation.component';
-import { TextInputComponent } from '../partials/text-input/text-input.component';
-import { DefaultButtonComponent } from '../partials/default-button/default-button.component';
+import { InputContainerComponent } from '../../partials/input-container/input-container.component';
+import { InputValidationComponent } from '../../partials/input-validation/input-validation.component';
+import { TextInputComponent } from '../../partials/text-input/text-input.component';
+import { DefaultButtonComponent } from '../../partials/default-button/default-button.component';
 
 @NgModule({
   declarations: [
