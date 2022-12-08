@@ -1,766 +1,1464 @@
-export const appetizers: any[] = [
+export const menu: any[] = [
     {
-        id: 114,
+        plu: 114,
         name: "House Soup",
         price: 1.95,
         desc: "Clear chicken broth with mushrooms & scallions",
-        image: "114.png"
+        image: "114.png",
+        category: "Appetizers",
+        subcategory: "Soup & Salads"
     },
     {
-        id: 115,
+        plu: 115,
         name: "Miso Soup",
         price: 1.95,
         desc: "Bean paste soup with mushrooms & scallions",
-        image: "115.jpeg"
+        image: "115.png",
+        category: "Appetizers",
+        subcategory: "Soup & Salads"
     },
     {
-        id: 119,
+        plu: 119,
         name: "One Quart House Soup",
-        price: 7.00
+        price: 7.00,
+        category: "Appetizers",
+        subcategory: "Soup & Salads"
     },
     {
-        id: 120,
+        plu: 120,
         name: "One Quart Miso Soup",
-        price: 7.00
+        price: 7.00,
+        category: "Appetizers",
+        subcategory: "Soup & Salads"
     },
     {
-        id: 116,
+        plu: 116,
         name: "Kobe Salad",
         price: 2.50,
-        desc: "Iceberg lettuce, ginger dressing, carrots, & tomato"
+        desc: "Iceberg lettuce, ginger dressing, carrots, & tomato",
+        image: "116.png",
+        category: "Appetizers",
+        subcategory: "Soup & Salads"
     },
     {
-        id: 117,
+        plu: 117,
         name: "Large Kobe Salad",
-        price: 4.50
+        price: 4.50,
+        category: "Appetizers",
+        subcategory: "Soup & Salads"
     },
     {
-        id: 102,
+        plu: 102,
         name: "Seaweed Salad",
         price: 4.25,
-        desc: "Japanese Seaweed Salad (Wakame)"
+        desc: "Japanese Seaweed Salad (Wakame)",
+        image: "102.png",
+        category: "Appetizers",
+        subcategory: "Soup & Salads"
     },
     {
-        id: 103,
+        plu: 103,
         name: "Tako Salad",
         price: 5.25,
-        desc: "Octopus and cucumber"
+        desc: "Octopus and cucumber",
+        image: "103.png",
+        category: "Appetizers",
+        subcategory: "Soup & Salads"
     },
     {
-        id: 104,
+        plu: 104,
         name: "Crab Salad",
         price: 5.25,
-        desc: "Imitation crab, spicy mayo, & cucumber"
+        desc: "Imitation crab, spicy mayo, & cucumber",
+        image: "104.png",
+        category: "Appetizers",
+        subcategory: "Soup & Salads"
     },
     {
-        id: 100,
+        plu: 100,
         name: "Edamame",
         price: 4.25,
         desc: "Lightly boiled and salted soybeans",
-        image: "100.png"
+        image: "100.png",
+        category: "Appetizers",
+        subcategory: "Appetizers"
     },
     {
-        id: 101,
+        plu: 101,
         name: "Spring Rolls",
         price: 4.25,
-        desc: "Chicken & vegetable filled crispy rolls"
+        desc: "Chicken & vegetable filled crispy rolls",
+        image: "101.png",
+        category: "Appetizers",
+        subcategory: "Appetizers"
     },
     {
-        id: 105,
+        plu: 105,
         name: "Gyoza",
         price: 6.25,
-        desc: "Pan fried pork dumplings"
+        desc: "Pan fried pork dumplings",
+        image: "105.png",
+        category: "Appetizers",
+        subcategory: "Appetizers"
     },
     {
-        id: 106,
+        plu: 106,
         name: "Kobe Appetizer",
         price: 6.25,
-        desc: "Shrimp, broccoli, & onion tempura"
+        desc: "Shrimp, broccoli, & onion tempura",
+        image: "106.png",
+        category: "Appetizers",
+        subcategory: "Appetizers"
     },
     {
-        id: 107,
+        plu: 107,
         name: "Yakitori",
         price: 6.25,
-        desc: "Chicken & onion skewers with teriyaki sauce"
+        desc: "Chicken & onion skewers with teriyaki sauce",
+        image: "107.png",
+        category: "Appetizers",
+        subcategory: "Appetizers"
     },
     {
-        id: 108,
+        plu: 108,
         name: "Crab Cakes",
         price: 6.25,
-        desc: "Deep-fried shrimp dumplings"
+        desc: "Deep-fried shrimp dumplings",
+        image: "108.png",
+        category: "Appetizers",
+        subcategory: "Appetizers"
     },
     {
-        id: 111,
+        plu: 111,
         name: "Unagi Kabayaki",
         price: 9.25,
-        desc: "3 pieces of freshwater eel on a bed of rice"
+        desc: "3 pieces of freshwater eel on a bed of rice",
+        image: "111.png",
+        category: "Appetizers",
+        subcategory: "Sushi Appetizers"
     },
     {
-        id: 112,
+        plu: 112,
         name: "Sushi Appetizer",
         price: 9.95,
-        desc: "4 pieces of chef picked nigiri"
+        desc: "4 pieces of chef picked nigiri",
+        image: "112.png",
+        category: "Appetizers",
+        subcategory: "Sushi Appetizers"
     },
     {
-        id: 113,
+        plu: 113,
         name: "Sashimi Appetizer",
         price: 10.95,
-        desc: "5 pieces of chef picked sashimi"
+        desc: "5 pieces of chef picked sashimi",
+        image: "113.png",
+        category: "Appetizers",
+        subcategory: "Sushi Appetizers"
     },
     {
-        id: 109,
+        plu: 109,
         name: "Side Noodles",
         price: 6.25,
-        desc: "One serving of plain lo mein noodles"
+        desc: "One serving of plain lo mein noodles",
+        image: "109.png",
+        category: "Appetizers",
+        subcategory: "Noodles & Rice"
     },
     {
-        id: 110,
+        plu: 110,
         name: "Udon Noodles",
         price: 13.95,
-        desc: "Thick rice noodles in clear broth with vegetables & shrimp tempura"
+        desc: "Thick rice noodles in clear broth with vegetables & shrimp tempura",
+        image: "110.png",
+        category: "Appetizers",
+        subcategory: "Noodles & Rice"
     },
     {
-        id: 118,
+        plu: 118,
         name: "Fried Rice",
         price: 4.25,
-        desc: "One serving of plain rice"
+        desc: "One serving of plain rice",
+        image: "118.png",
+        category: "Appetizers",
+        subcategory: "Noodles & Rice"
     },
     {
-        id: 121,
+        plu: 121,
         name: "Steamed Rice",
         price: 4.25,
-        desc: "One serving of plain rice"
-    }
-]
-
-export const teppanyaki: any[] = [
+        desc: "One serving of plain rice",
+        image: "121.png",
+        category: "Appetizers",
+        subcategory: "Noodles & Rice"
+    },
     {
-        id: 300,
+        plu: 300,
         name: "Teriyaki Chicken",
         price: 17.95,
         desc: "6 ounces of chicken cooked with homemade teriyaki sauce.",
-        image: "100.png"
+        image: "300.png",
+        category: "Teppanyaki",
+        subcategory: "Single Choice"
     },
     {
-        id: 301,
+        plu: 301,
         name: "Vegetables",
         price: 16.95,
-        desc: "Carrots, napa cabbage, broccoli, and green peppers. Shrimp is NOT included."
+        desc: "Carrots, napa cabbage, broccoli, and green peppers. Shrimp is NOT included.",
+        image: "301.png",
+        category: "Teppanyaki",
+        subcategory: "Single Choice"
     },
     {
-        id: 302,
+        plu: 302,
         name: "Salmon",
         price: 20.95,
-        desc: "One and a half grilled salmon filets topped with teriyaki sauce."
+        desc: "One and a half grilled salmon filets topped with teriyaki sauce.",
+        image: "302.png",
+        category: "Teppanyaki",
+        subcategory: "Single Choice"
     },
     {
-        id: 303,
+        plu: 303,
         name: "Shrimp",
         price: 21.95,
-        desc: "Ten (8 + 2 included) total pieces of grilled shrimp."
+        desc: "Ten (8 + 2 included) total pieces of grilled shrimp.",
+        image: "303.png",
+        category: "Teppanyaki",
+        subcategory: "Single Choice"
     },
     {
-        id: 304,
+        plu: 304,
         name: "Scallops",
         price: 22.95,
-        desc: "4 ounces of grilled scallops."
+        desc: "4 ounces of grilled scallops.",
+        image: "304.png",
+        category: "Teppanyaki",
+        subcategory: "Single Choice"
     },
     {
-        id: 305,
+        plu: 305,
         name: "Lobster",
         price: 39.95,
-        desc: "Two deshelled and cut lobster tails."
+        desc: "Two deshelled and cut lobster tails.",
+        image: "305.png",
+        category: "Teppanyaki",
+        subcategory: "Single Choice"
     },
     {
-        id: 306,
+        plu: 306,
         name: "Ribeye",
         price: 17.95,
         desc: "7 ounces of cut ribeye steak.",
-        image: "100.png"
+        image: "306.png",
+        category: "Teppanyaki",
+        subcategory: "Steaks"
     },
     {
-        id: 307,
+        plu: 307,
         name: "Ribeye w/ Pepper",
         price: 17.95,
-        desc: "7 ounces of cut ribeye steak cooked with green peppers."
+        desc: "7 ounces of cut ribeye steak cooked with green peppers.",
+        image: "307.png",
+        category: "Teppanyaki",
+        subcategory: "Steaks"
     },
     {
-        id: 308,
+        plu: 308,
         name: "Filet Mignon",
         price: 17.95,
-        desc: "5 ounces of cut filet mignon."
+        desc: "5 ounces of cut filet mignon.",
+        image: "308.png",
+        category: "Teppanyaki",
+        subcategory: "Steaks"
     },
     {
-        id: 309,
+        plu: 309,
         name: "Filet Mignon w/ Broccoli",
         price: 17.95,
-        desc: "5 ounces of cut filet mignon cooked with broccoli."
+        desc: "5 ounces of cut filet mignon cooked with broccoli.",
+        image: "309.png",
+        category: "Teppanyaki",
+        subcategory: "Steaks"
     },
     {
-        id: 310,
+        plu: 310,
         name: "Yakiniku",
         price: 17.95,
-        desc: "7 ounces of cut ribeye steak cooked with assorted vegetables and our savory yakiniku sauce."
+        desc: "7 ounces of cut ribeye steak cooked with assorted vegetables and our savory yakiniku sauce.",
+        image: "310.png",
+        category: "Teppanyaki",
+        subcategory: "Steaks"
     },
     {
-        id: 311,
+        plu: 311,
         name: "Teriyaki Chicken",
         price: 15.95,
         desc: "4 ounces of teriyaki chicken.",
-        image: "100.png"
+        image: "311.png",
+        category: "Teppanyaki",
+        subcategory: "Senior & Children"
     },
     {
-        id: 314,
+        plu: 314,
         name: "Ribeye",
         price: 16.95,
-        desc: "4 ounces of cut ribeye steak."
+        desc: "4 ounces of cut ribeye steak.",
+        category: "Teppanyaki",
+        subcategory: "Senior & Children"
     },
     {
-        id: 315,
+        plu: 315,
         name: "Filet Mignon",
         price: 17.95,
-        desc: "3 ounces of cut filet mignon."
+        desc: "3 ounces of cut filet mignon.",
+        category: "Teppanyaki",
+        subcategory: "Senior & Children"
     },
     {
-        id: 312,
+        plu: 312,
         name: "Shrimp",
         price: 16.95,
-        desc: "Seven (5 + 2 included) total pieces of grilled shrimp."
+        desc: "Seven (5 + 2 included) total pieces of grilled shrimp.",
+        category: "Teppanyaki",
+        subcategory: "Senior & Children"
     },
     {
-        id: 313,
+        plu: 313,
         name: "Scallops",
         price: 18.95,
-        desc: "2 ounces of grilled scallops."
+        desc: "2 ounces of grilled scallops.",
+        category: "Teppanyaki",
+        subcategory: "Senior & Children"
     },
     {
-        id: 341,
+        plu: 341,
         name: "Sumo Teriyaki Chicken",
         price: 26.95,
         desc: "12 ounces of teriyaki chicken.",
-        image: "100.png"
+        image: "341.png",
+        category: "Teppanyaki",
+        subcategory: "Sumo Choice"
     },
     {
-        id: 342,
+        plu: 342,
         name: "Sumo Ribeye",
         price: 33.95,
-        desc: "13 ounces of cut ribeye steak."
+        desc: "13 ounces of cut ribeye steak.",
+        category: "Teppanyaki",
+        subcategory: "Sumo Choice"
     },
     {
-        id: 343,
+        plu: 343,
         name: "Sumo Filet Mignon",
         price: 33.95,
-        desc: "8 ounces of cut filet mignon."
-    }
-]
-
-export const combos: any[] = [
+        desc: "8 ounces of cut filet mignon.",
+        category: "Teppanyaki",
+        subcategory: "Sumo Choice"
+    },
     {
-        id: 316,
+        plu: 316,
         name: "Teriyaki Chicken & Lobster",
         price: 33.95,
         desc: "4 ounces of teriyaki chicken and one lobster tail.",
-        image: "100.png"
+        image: "316.png",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 317,
+        plu: 317,
         name: "Teriyaki Chicken & Ribeye",
         price: 24.95,
-        desc: "4 ounces of teriyaki chicken and 4 ounces of cut ribeye steak."
+        desc: "4 ounces of teriyaki chicken and 4 ounces of cut ribeye steak.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 318,
+        plu: 318,
         name: "Teriyaki Chicken & Filet Mignon",
         price: 27.95,
-        desc: "4 ounces of teriyaki chicken and 3 ounces of cut filet mignon."
+        desc: "4 ounces of teriyaki chicken and 3 ounces of cut filet mignon.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 319,
+        plu: 319,
         name: "Teriyaki Chicken & Shrimp",
         price: 24.95,
-        desc: "4 ounces of teriyaki chicken and seven total pieces of shrimp."
+        desc: "4 ounces of teriyaki chicken and seven total pieces of shrimp.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 320,
+        plu: 320,
         name: "Teriyaki Chicken & Scallops",
         price: 25.95,
-        desc: "4 ounces of teriyaki chicken and 2 ounces of scallops."
+        desc: "4 ounces of teriyaki chicken and 2 ounces of scallops.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 321,
+        plu: 321,
         name: "Teriyaki Chicken & Salmon",
         price: 25.95,
-        desc: "4 ounces of teriyaki chicken and one salmon filet."
+        desc: "4 ounces of teriyaki chicken and one salmon filet.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 322,
+        plu: 322,
         name: "Shrimp & Salmon",
         price: 25.95,
-        desc: "Seven total pieces of shrimp and one salmon filet."
+        desc: "Seven total pieces of shrimp and one salmon filet.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 323,
+        plu: 323,
         name: "Shrimp & Lobster",
         price: 34.95,
-        desc: "Seven total pieces of shrimp and one lobster tail."
+        desc: "Seven total pieces of shrimp and one lobster tail.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 324,
+        plu: 324,
         name: "Shrimp & Scallops",
         price: 27.95,
-        desc: "Seven total pieces of shrimp and 2 ounces of scallops."
+        desc: "Seven total pieces of shrimp and 2 ounces of scallops.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 353,
+        plu: 353,
         name: "Shrimp & Filet Mignon",
         price: 28.95,
-        desc: "Seven total pieces of shrimp and 3 ounces of cut filet mignon."
+        desc: "Seven total pieces of shrimp and 3 ounces of cut filet mignon.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 329,
+        plu: 329,
         name: "Shrimp & Ribeye",
         price: 25.95,
-        desc: "Seven total pieces of shrimp and 4 ounces of cut ribeye steak."
+        desc: "Seven total pieces of shrimp and 4 ounces of cut ribeye steak.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 326,
+        plu: 326,
         name: "Scallops & Salmon",
         price: 26.95,
-        desc: "2 ounces of scallops and one salmon filet."
+        desc: "2 ounces of scallops and one salmon filet.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 325,
+        plu: 325,
         name: "Scallops & Lobster",
         price: 34.95,
-        desc: "2 ounces of scallops and one lobster tail."
+        desc: "2 ounces of scallops and one lobster tail.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 327,
+        plu: 327,
         name: "Scallops & Filet Mignon",
         price: 29.95,
-        desc: "2 ounces of scallops and 3 ounces of cut filet mignon."
+        desc: "2 ounces of scallops and 3 ounces of cut filet mignon.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 328,
+        plu: 328,
         name: "Scallops & Ribeye",
         price: 26.95,
-        desc: "2 ounces of scallops and 4 ounces of cut ribeye steak."
+        desc: "2 ounces of scallops and 4 ounces of cut ribeye steak.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 330,
+        plu: 330,
         name: "Filet & Lobster",
         price: 34.95,
-        desc: "3 ounces of cut filet mignon and one lobster tail."
+        desc: "3 ounces of cut filet mignon and one lobster tail.",
+        category: "Teppanyaki",
+        subcategory: "Double Choice"
     },
     {
-        id: 331,
+        plu: 331,
         name: "Teriyaki Chicken, Shrimp, & Ribeye",
         price: 33.95,
-        image: "100.png"
+        image: "331.png",
+        category: "Teppanyaki",
+        subcategory: "Triple Choice"
     },
     {
-        id: 332,
+        plu: 332,
         name: "Teriyaki Chicken, Shrimp, & Filet Mignon",
-        price: 34.95
+        price: 34.95,
+        category: "Teppanyaki",
+        subcategory: "Triple Choice"
     },
     {
-        id: 333,
+        plu: 333,
         name: "Teriyaki Chicken, Scallops, & Ribeye",
-        price: 34.95
+        price: 34.95,
+        category: "Teppanyaki",
+        subcategory: "Triple Choice"
     },
     {
-        id: 334,
+        plu: 334,
         name: "Teriyaki Chicken, Scallops, & Filet Mignon",
-        price: 35.95
+        price: 35.95,
+        category: "Teppanyaki",
+        subcategory: "Triple Choice"
     },
     {
-        id: 335,
+        plu: 335,
         name: "Teriyaki Chicken, Lobster, & Ribeye",
-        price: 38.95
+        price: 38.95,
+        category: "Teppanyaki",
+        subcategory: "Triple Choice"
     },
     {
-        id: 336,
+        plu: 336,
         name: "Shrimp, Lobster, & Salmon",
-        price: 39.95
+        price: 39.95,
+        category: "Teppanyaki",
+        subcategory: "Triple Choice"
     },
     {
-        id: 337,
+        plu: 337,
         name: "Shrimp, Lobster, & Scallops",
-        price: 40.95
+        price: 40.95,
+        category: "Teppanyaki",
+        subcategory: "Triple Choice"
     },
     {
-        id: 338,
+        plu: 338,
         name: "Shrimp, Lobster, & Filet Mignon",
-        price: 40.95
+        price: 40.95,
+        category: "Teppanyaki",
+        subcategory: "Triple Choice"
     },
     {
-        id: 339,
+        plu: 339,
         name: "Shrimp, Scallops, & Filet Mignon",
-        price: 35.95
+        price: 35.95,
+        category: "Teppanyaki",
+        subcategory: "Triple Choice"
     },
     {
-        id: 340,
+        plu: 340,
         name: "Shrimp, Scallops, and Ribeye",
-        price: 34.95
-    }
-]
-
-export const nigiri: any[] = [
+        price: 34.95,
+        category: "Teppanyaki",
+        subcategory: "Triple Choice"
+    },
     {
-        id: 200,
+        plu: 347,
+        name: "Extra Teriyaki Chicken",
+        price: 11.95,
+        desc: "6 ounces",
+        image: "347.png",
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 348,
+        name: "Extra Ribeye",
+        price: 11.95,
+        desc: "4 ounces",
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },                
+    {
+        plu: 349,
+        name: "Extra Shrimp",
+        price: 11.95,
+        desc: "5 pieces",
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 350,
+        name: "Extra Scallops",
+        price: 12.95,
+        desc: "2 ounces",
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 351,
+        name: "Extra Lobster",
+        price: 17.95,
+        desc: "1 tail",
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 352,
+        name: "Extra Filet Mignon",
+        price: 12.95,
+        desc: "4 ounces",
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 344,
+        name: "Extra Vegatables",
+        price: 5.25,
+        desc: "Extra mushrooms, zucchini, and onions",
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 345,
+        name: "Add egg",
+        price: 1.75,
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 354,
+        name: "Add broccoli",
+        price: 1.75,
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 355,
+        name: "Add mushrooms",
+        price: 1.75,
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 356,
+        name: "Add zucchini",
+        price: 1.75,
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 357,
+        name: "Add onion",
+        price: 1.75,
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 358,
+        name: "Add green peppers",
+        price: 1.75,
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 359,
+        name: "Add carrot",
+        price: 1.75,
+        category: "Teppanyaki",
+        subcategory: "Extras"
+    },
+    {
+        plu: 200,
         name: "Tuna",
         price: 2.50,
         desc: "Maguro",
-        image: "115.jpeg"
+        image: "200.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 201,
+        plu: 201,
         name: "Yellow Tail",
         price: 2.50,
-        desc: "Hamachi"
+        desc: "Hamachi",
+        image: "201.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 202,
+        plu: 202,
         name: "White Tuna",
         price: 2.50,
-        desc: "Shiro Maguro"
+        desc: "Shiro Maguro",
+        image: "202.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 203,
+        plu: 203,
         name: "Salmon",
         price: 2.50,
-        desc: "Sake"
+        desc: "Sake",
+        image: "203.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 204,
+        plu: 204,
         name: "Smoked Salmon",
         price: 2.50,
-        desc: "Kunsei Sake"
+        desc: "Kunsei Sake",
+        image: "204.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 205,
+        plu: 205,
         name: "Shrimp",
         price: 2.50,
-        desc: "Ebi"
+        desc: "Ebi",
+        image: "205.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 206,
+        plu: 206,
         name: "Octopus",
         price: 2.50,
-        desc: "Tako"
+        desc: "Tako",
+        image: "206.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 207,
+        plu: 207,
         name: "Squid",
         price: 2.50,
-        desc: "Ika"
+        desc: "Ika",
+        image: "207.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 208,
+        plu: 208,
         name: "Crab Stick",
         price: 2.50,
-        desc: "Kani"
+        desc: "Kani",
+        image: "208.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 209,
+        plu: 209,
         name: "Grilled Eel",
         price: 3.25,
-        desc: "Unagi"
+        desc: "Unagi",
+        image: "209.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 210,
+        plu: 210,
         name: "Sweet Shrimp",
         price: 3.25,
-        desc: "Amai Ebi"
+        desc: "Amai Ebi",
+        image: "210.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 211,
+        plu: 211,
         name: "Surf Clam",
         price: 2.50,
-        desc: "Hokkigai"
+        desc: "Hokkigai",
+        image: "211.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 212,
+        plu: 212,
         name: "Red Snapper",
         price: 2.50,
-        desc: "Tai"
+        desc: "Tai",
+        image: "212.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 213,
+        plu: 213,
         name: "Smelt Roe",
         price: 2.95,
-        desc: "Masago"
+        desc: "Masago",
+        image: "213.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 214,
+        plu: 214,
         name: "Sea Urchin",
         price: 3.75,
-        desc: "Uni"
+        desc: "Uni",
+        image: "214.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 215,
+        plu: 215,
         name: "Egg Cake",
         price: 2.50,
-        desc: "Tamago"
+        desc: "Tamago",
+        image: "215.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 216,
+        plu: 216,
         name: "Salmon Eggs",
         price: 3.25,
-        desc: "Ikura"
+        desc: "Ikura",
+        image: "216.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
     },
     {
-        id: 217,
+        plu: 217,
         name: "Quail Egg",
         price: 0.95,
-        desc: "Uzura"
-    }
-]
-
-export const sushiRolls: any[] = [
+        desc: "Uzura",
+        image: "217.png",
+        category: "Sushi",
+        subcategory: "Nigiri"
+    },
     {
-        id: 218,
+        plu: 218,
         name: "Alaska Roll",
         price: 5.95,
         desc: "Smoked salmon, avocado, cucumber, and sesame seeds",
-        image: "115.jpeg"
+        image: "218.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 219,
+        plu: 219,
         name: "Arizona Roll",
         price: 5.95,
-        desc: "Yellow tail, scallions, and masago"
+        desc: "Yellow tail, scallions, and masago",
+        image: "219.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 220,
+        plu: 220,
         name: "Avocado Roll",
-        price: 4.25
+        price: 4.25,
+        image: "220.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 221,
+        plu: 221,
         name: "Big Roll (Futomaki)",
         price: 11.95,
-        desc: "Imitation crab, cucumber, avocado, egg, and masago"
+        desc: "Imitation crab, cucumber, avocado, egg, and masago",
+        image: "221.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 222,
+        plu: 222,
         name: "California Roll",
         price: 5.50,
-        desc: "Imitation crab, cucumber, avocado, mayo, and sesame seeds"
+        desc: "Imitation crab, cucumber, avocado, mayo, and sesame seeds",
+        image: "222.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 223,
+        plu: 223,
         name: "Crab Roll",
         price: 5.50,
-        desc: "Imitation crab, mayo, and sesame seeds"
+        desc: "Imitation crab, mayo, and sesame seeds",
+        image: "223.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 224,
+        plu: 224,
         name: "Crazy Roll",
         price: 12.95,
-        desc: "Deep-fried shrimp, imitation crab, cucumber, avocado, chili peppers, and eel sauce"
+        desc: "Deep-fried shrimp, imitation crab, cucumber, avocado, chili peppers, and eel sauce",
+        image: "224.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 225,
+        plu: 225,
         name: "Cucumber Roll",
-        price: 4.25
+        price: 4.25,
+        image: "225.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 226,
+        plu: 226,
         name: "Dragon Roll",
         price: 12.95,
-        desc: "Grilled eel and cucumber, topped with avocado, eel sauce, and masago"
+        desc: "Grilled eel and cucumber, topped with avocado, eel sauce, and masago",
+        image: "226.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 227,
+        plu: 227,
         name: "Eel Roll",
         price: 5.95,
-        desc: "Grilled eel, cucumber, and eel sauce"
+        desc: "Grilled eel, cucumber, and eel sauce",
+        image: "227.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 228,
+        plu: 228,
         name: "Hollywood Roll",
         price: 7.95,
-        desc: "Tuna, cucumber, avocado, and masago"
+        desc: "Tuna, cucumber, avocado, and masago",
+        image: "228.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 229,
+        plu: 229,
         name: "House Roll",
         price: 7.25,
-        desc: "Deep-fried shrimp, carrot, mayo, and sesame seeds"
+        desc: "Deep-fried shrimp, carrot, mayo, and sesame seeds",
+        image: "229.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 230,
+        plu: 230,
         name: "KFC Roll",
         price: 6.25,
-        desc: "Deep-fried chicken, lettuce, tomato, mayo, and masago"
+        desc: "Deep-fried chicken, lettuce, tomato, mayo, and masago",
+        image: "230.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 231,
+        plu: 231,
         name: "Kobe Roll",
         price: 10.95,
-        desc: "California roll topped with roast beef, teriyaki sauce, and masago"
+        desc: "California roll topped with roast beef, teriyaki sauce, and masago",
+        image: "231.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 232,
+        plu: 232,
         name: "Kobe Giant Roll",
         price: 16.95,
-        desc: "Deep-fried shrimp, deep-fried soft-shell crab, cucumber, avocago, masago, cream cheese, and sesame seeds"
+        desc: "Deep-fried shrimp, deep-fried soft-shell crab, cucumber, avocago, masago, cream cheese, and sesame seeds",
+        image: "232.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 233,
+        plu: 233,
         name: "Lobster Roll",
         price: 13.95,
-        desc: "Deep-fried lobster, cucumber, avocado, cream cheese, and masago"
+        desc: "Deep-fried lobster, cucumber, avocado, cream cheese, and masago",
+        image: "233.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 234,
+        plu: 234,
         name: "Mixed Vegetable Roll",
         price: 5.50,
-        desc: "Cucumber, carrot, avocado, and sesame seeds"
+        desc: "Cucumber, carrot, avocado, and sesame seeds",
+        image: "234.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 235,
+        plu: 235,
         name: "Oisy Roll",
         price: 5.95,
-        desc: "Salmon, imitation crab, avocado, and sesame seeds"
+        desc: "Salmon, imitation crab, avocado, and sesame seeds",
+        image: "235.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 236,
+        plu: 236,
         name: "Osaka Roll",
         price: 10.95,
-        desc: "Tuna, salmon, avocado, imitation crab, egg cake, and masago"
+        desc: "Tuna, salmon, avocado, imitation crab, egg cake, and masago",
+        image: "236.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 237,
+        plu: 237,
         name: "Philadelphia Roll",
         price: 7.95,
-        desc: "Smoked salmon, avocado, cucumber, cream cheese, and masago"
+        desc: "Smoked salmon, avocado, cucumber, cream cheese, and masago",
+        image: "237.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 238,
+        plu: 238,
         name: "Rainbow Roll",
         price: 14.95,
-        desc: "California roll with 6 pieces of chef-picked fish on top"
+        desc: "California roll with 6 pieces of chef-picked fish on top",
+        image: "238.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 239,
+        plu: 239,
         name: "Salmon Roll",
-        price: 4.95
+        price: 4.95,
+        image: "239.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 240,
+        plu: 240,
         name: "Salmon Avocado Roll",
-        price: 5.50
+        price: 5.50,
+        image: "240.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 241,
+        plu: 241,
         name: "Spicy Crab Roll",
         price: 5.95,
-        desc: "Spicy crab, cucumber, and sesame seeds"
+        desc: "Spicy crab, cucumber, and sesame seeds",
+        image: "241.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 242,
+        plu: 242,
         name: "Spicy Salmon Roll",
         price: 5.95,
-        desc: "Spicy salmon, cucumber, and sesame seeds"
+        desc: "Spicy salmon, cucumber, and sesame seeds",
+        image: "242.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 243,
+        plu: 243,
         name: "Spicy Scallops Roll",
         price: 5.95,
-        desc: "Spicy scallops, cucumber, and sesame seeds"
+        desc: "Spicy scallops, cucumber, and sesame seeds",
+        image: "243.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 244,
+        plu: 244,
         name: "Spicy Tuna Roll",
         price: 5.95,
-        desc: "Spicy tuna, cucumber, and sesame seeds"
+        desc: "Spicy tuna, cucumber, and sesame seeds",
+        image: "244.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 245,
+        plu: 245,
         name: "Spider Roll",
         price: 10.95,
-        desc: "Deep-fried soft-shell crab, avocado, and masago"
+        desc: "Deep-fried soft-shell crab, avocado, and masago",
+        image: "245.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 246,
+        plu: 246,
         name: "Steelers Roll",
         price: 12.95,
-        desc: "Grilled eel, deep-fried shrimp, cucumber, avocado, masago, and eel sauce"
+        desc: "Grilled eel, deep-fried shrimp, cucumber, avocado, masago, and eel sauce",
+        image: "246.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 247,
+        plu: 247,
         name: "Tempura Roll",
         price: 8.25,
-        desc: "Deep-fried shrimp, cucumber, avocado, mayo, and masago"
+        desc: "Deep-fried shrimp, cucumber, avocado, mayo, and masago",
+        image: "247.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 248,
+        plu: 248,
         name: "Tokyo Roll",
         price: 10.95,
-        desc: "Grilled eel, avocado, cucumber, eel sauce, and masago"
+        desc: "Grilled eel, avocado, cucumber, eel sauce, and masago",
+        image: "248.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 249,
+        plu: 249,
         name: "Tuna Roll",
-        price: 4.95
+        price: 4.95,
+        image: "249.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 250,
+        plu: 250,
         name: "Tuna Avocado Roll",
-        price: 5.50
+        price: 5.50,
+        image: "250.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
     },
     {
-        id: 251,
+        plu: 251,
         name: "Volcano Roll",
         price: 9.95,
-        desc: "Spicy salmon and avocado, topped with spicy crab, teriyaki sauce, and sriracha sauce"
-    }
-]
-
-export const sushiEntrees: any[] = [
+        desc: "Spicy salmon and avocado, topped with spicy crab, teriyaki sauce, and sriracha sauce",
+        image: "251.png",
+        category: "Sushi",
+        subcategory: "Sushi Rolls"
+    },
     {
-        id: 252,
+        plu: 252,
         name: "Sushi A",
         price: 23.95,
-        desc: "California roll and 8 pieces of chef-picked nigiri"
+        desc: "California roll and 8 pieces of chef-picked nigiri",
+        image: "252.png",
+        category: "Sushi",
+        subcategory: "Sushi Entrées"
     },
     {
-        id: 253,
+        plu: 253,
         name: "Sushi B",
         price: 28.95,
-        desc: "California roll and 12 pieces of chef-picked nigiri"
+        desc: "California roll and 12 pieces of chef-picked nigiri",
+        image: "253.png",
+        category: "Sushi",
+        subcategory: "Sushi Entrées"
     },
     {
-        id: 254,
+        plu: 254,
         name: "Unagi Don",
         price: 19.95,
-        desc: "6 pieces of freshwater eel on a bed of rice with sesame seeds and eel sauce"
+        desc: "6 pieces of freshwater eel on a bed of rice with sesame seeds and eel sauce",
+        image: "254.png",
+        category: "Sushi",
+        subcategory: "Sushi Entrées"
     },
     {
-        id: 255,
+        plu: 255,
         name: "Sashimi Regular",
         price: 24.95,
-        desc: "12 pieces of chef-picked sashimi laid on shredded radish"
+        desc: "12 pieces of chef-picked sashimi laid on shredded radish",
+        image: "255.png",
+        category: "Sushi",
+        subcategory: "Sushi Entrées"
     },
     {
-        id: 256,
+        plu: 256,
         name: "Sashimi Deluxe",
         price: 29.95,
-        desc: "16 pieces of chef-picked sashimi laid on shredded radish"
+        desc: "16 pieces of chef-picked sashimi laid on shredded radish",
+        image: "256.png",
+        category: "Sushi",
+        subcategory: "Sushi Entrées"
     },
     {
-        id: 257,
+        plu: 257,
         name: "Chicken Katsu",
         price: 19.95,
-        desc: "Deep-fried chicken on a bed of rice with cucumbers, avocados, and teriyaki sauce"
+        desc: "Deep-fried chicken on a bed of rice with cucumbers, avocados, and teriyaki sauce",
+        image: "257.png",
+        category: "Sushi",
+        subcategory: "Sushi Entrées"
     },
     {
-        id: 258,
+        plu: 258,
         name: "Kobe Tuna",
         price: 22.95,
-        desc: "10 pieces of yellowfin tuna on a bed of rice with sesame seeds and teriyaki sauce"
+        desc: "10 pieces of yellowfin tuna on a bed of rice with sesame seeds and teriyaki sauce",
+        image: "258.png",
+        category: "Sushi",
+        subcategory: "Sushi Entrées"
+    },
+    {
+        plu: 600,
+        name: "Japanese Custard",
+        price: 3.95,
+        desc: "Flan-like cold custard pudding",
+        image: "600.png",
+        category: "Dessert",
+        subcategory: "Dessert"
+    },
+    {
+        plu: 601,
+        name: "Cheesecake",
+        price: 3.95,
+        desc: "One slice of New York-style cheesecake",
+        image: "601.png",
+        category: "Dessert",
+        subcategory: "Dessert"
+    },
+    {
+        plu: 602,
+        name: "Green Tea Ice Cream",
+        price: 2.50,
+        image: "602.png",
+        category: "Dessert",
+        subcategory: "Ice Cream"
+    },
+    {
+        plu: 603,
+        name: "Red Bean Ice Cream",
+        price: 2.50,
+        image: "603.png",
+        category: "Dessert",
+        subcategory: "Ice Cream"
+    },
+    {
+        plu: 400,
+        name: "Pepsi",
+        price: 2.75,
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 401,
+        name: "Diet Pepsi",
+        price: 2.75,
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 402,
+        name: "Mountain Dew",
+        price: 2.75,
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 403,
+        name: "Lemonade",
+        price: 2.75,
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 404,
+        name: "Dr. Pepper",
+        price: 2.75,
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 405,
+        name: "Sprite",
+        price: 2.75,
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 406,
+        name: "Root Beer",
+        price: 2.75,
+        desc: "Bottle - no refills!",
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 407,
+        name: "Sweet Tea",
+        price: 2.75,
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 408,
+        name: "Unsweet Tea",
+        price: 2.75,
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 409,
+        name: "Raspberry Iced Tea",
+        price: 2.75,
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 410,
+        name: "Coffee",
+        price: 2.75,
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 411,
+        name: "Green Tea",
+        price: 1.50,
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 412,
+        name: "Strawberry Ramune",
+        price: 4.00,
+        desc: "Bottle - no refills!",
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 413,
+        name: "Blue Hawaii Ramune",
+        price: 4.00,
+        desc: "Bottle - no refills!",
+        category: "Beverages",
+        subcategory: "Drinks"
+    },
+    {
+        plu: 500,
+        name: "Midori",
+        price: 6.50,
+        desc: "Melon liqueur with choice of rum or vodka",
+        category: "Beverages",
+        subcategory: "Cocktails"
+    },
+    {
+        plu: 501,
+        name: "Tokyo Mary",
+        price: 6.50,
+        desc: "Sake, tomato juice, and other spices and flavorings",
+        category: "Beverages",
+        subcategory: "Cocktails"
+    },
+    {
+        plu: 502,
+        name: "Bloody Mary",
+        price: 6.50,
+        desc: "Vodka, tomato juice, and other spices and flavorings",
+        category: "Beverages",
+        subcategory: "Cocktails"
+    },
+    {
+        plu: 503,
+        name: "Hotei",
+        price: 6.50,
+        desc: "A tropical drink (pineapple juice, sour, and grenadine) with apricot brandy and rum",
+        category: "Beverages",
+        subcategory: "Cocktails"
+    },
+    {
+        plu: 504,
+        name: "Pina Colada",
+        price: 7.50,
+        desc: "Rum, cream of coconut, and pineapple juice served frozen",
+        category: "Beverages",
+        subcategory: "Cocktails"
+    },
+    {
+        plu: 505,
+        name: "Maitai",
+        price: 7.50,
+        desc: "A tropical drink (pineapple juice, sour, and grenadine) with apricot brandy and 151 rum",
+        category: "Beverages",
+        subcategory: "Cocktails"
+    },
+    {
+        plu: 506,
+        name: "Long Island",
+        price: 7.50,
+        desc: "Sour with rum, vodka, gin",
+        category: "Beverages",
+        subcategory: "Cocktails"
+    },
+    {
+        plu: 507,
+        name: "Strawberry Daiquiri",
+        price: 7.50,
+        desc: "Rum and strawberry mix served frozen",
+        category: "Beverages",
+        subcategory: "Cocktails"
+    },
+    {
+        plu: 508,
+        name: "Domestic Beer",
+        price: 3.50,
+        category: "Beverages",
+        subcategory: "Beers"
+    },
+    {
+        plu: 509,
+        name: "Specialty Beer",
+        price: 4.50,
+        category: "Beverages",
+        subcategory: "Beers"
+    },
+    {
+        plu: 510,
+        name: "12 oz Sapparo",
+        price: 4.50,
+        category: "Beverages",
+        subcategory: "Beers"
+    },
+    {
+        plu: 511,
+        name: "16 oz Sapparo",
+        price: 6.50,
+        category: "Beverages",
+        subcategory: "Beers"
+    },
+    {
+        plu: 512,
+        name: "22 oz Sapparo",
+        price: 8.50,
+        category: "Beverages",
+        subcategory: "Beers"
+    },
+    {
+        plu: 513,
+        name: "Small Sake",
+        price: 5.00,
+        desc: "4 ounces",
+        category: "Beverages",
+        subcategory: "Wines"
+    },
+    {
+        plu: 514,
+        name: "Large Sake",
+        price: 10.00,
+        desc: "8 ounces",
+        category: "Beverages",
+        subcategory: "Wines"
+    },
+    {
+        plu: 515,
+        name: "Red Wine",
+        price: 6.50,
+        desc: "Cabernet, Merlot (+ $1.00 for Blackstone, Gnarly Head), Red Blend, Pinot Noir",
+        category: "Beverages",
+        subcategory: "Wines"
+    },
+    {
+        plu: 516,
+        name: "White Wine",
+        price: 6.50,
+        desc: "Chardonnay (+ $1.00 for Gnarly Head, Castle Rock, Black Stone), Moscato, Reisling, Sauvignon Blanc, Pinot Grigio",
+        category: "Beverages",
+        subcategory: "Wines"
+    },
+    {
+        plu: 517,
+        name: "Plum Wine",
+        price: 6.50,
+        category: "Beverages",
+        subcategory: "Wines"
     }
 ]
 

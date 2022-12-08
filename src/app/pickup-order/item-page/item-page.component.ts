@@ -17,7 +17,7 @@ export class ItemPageComponent implements OnInit {
       
     activatedRoute.params.subscribe((params) => {
       if (params['id'])
-        menuService.getItemByID(Number(params['id'])).subscribe(serverMenu => {
+        menuService.getItemByID(params['id']).subscribe(serverMenu => {
           this.menu = serverMenu;
         });
     })
