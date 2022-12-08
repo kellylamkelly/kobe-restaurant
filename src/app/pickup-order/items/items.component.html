@@ -7,116 +7,118 @@
     <button (click)="scrollToElement(anchorSushiDinners)">Sushi Entr&#233;es</button>
 </div>
 
-<h2 #anchorApps>Appetizers</h2>
-<!-- Display Appetizers -->
-<div id="item-group">
-    <div class="menu-item" *ngFor="let item of appsMenu">
-        <button routerLink="/order/menu/{{item.id}}" class="menu-button">
-            <div *ngIf="item.image">
-                <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
-            </div>
-            <div class="menu-item-text">
-                <h3 class="menu-item-heading">
-                    <span class="menu-item-name">{{item.name}}</span>
-                    <span class="menu-item-price">{{item.price|currency}}</span>
-                </h3>
-                <h4 class="menu-item-desc">{{item.desc}}</h4>
-            </div>
-        </button>
+<div class="descBlock">
+    <h2 #anchorApps>Appetizers</h2>
+    <!-- Display Appetizers -->
+    <div id="item-group">
+        <div class="menu-item" *ngFor="let item of appsMenu">
+            <button routerLink="/order/menu/{{item.id}}" class="menu-button">
+                <div *ngIf="item.image">
+                    <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
+                </div>
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">{{item.name}}</span>
+                        <span class="menu-item-price">{{item.price|currency}}</span>
+                    </h3>
+                    <h4 class="menu-item-desc">{{item.desc}}</h4>
+                </div>
+            </button>
+        </div>
     </div>
-</div>
 
-<h2 #anchorTepp>Teppanyaki</h2>
-<!-- Display Teppanyaki -->
-<div id="item-group">
-    <div class="menu-item" *ngFor="let item of teppMenu">
-        <button routerLink="/order/menu/{{item.id}}" class="menu-button">
-            <div *ngIf="item.image">
-                <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
-            </div>
-            <div class="menu-item-text">
-                <h3 class="menu-item-heading">
-                    <span class="menu-item-name">{{item.name}}</span>
-                    <span class="menu-item-price">{{item.price|currency}}</span>
-                </h3>
-                <h4 class="menu-item-desc">{{item.desc}}</h4>
-            </div>
-        </button>
+    <h2 #anchorTepp>Teppanyaki</h2>
+    <!-- Display Teppanyaki -->
+    <div id="item-group">
+        <div class="menu-item" *ngFor="let item of teppMenu">
+            <button routerLink="/order/menu/{{item.id}}" class="menu-button">
+                <div *ngIf="item.image">
+                    <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
+                </div>
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">{{item.name}}</span>
+                        <span class="menu-item-price">{{item.price|currency}}</span>
+                    </h3>
+                    <h4 class="menu-item-desc">{{item.desc}}</h4>
+                </div>
+            </button>
+        </div>
     </div>
-</div>
 
-<h2 #anchorCombos>Combos</h2>
-<!-- Display Combos -->
-<div id="item-group">
-    <div class="menu-item" *ngFor="let item of combosMenu">
-        <button routerLink="/order/menu/{{item.id}}" class="menu-button">
-            <div *ngIf="item.image">
-                <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
-            </div>
-            <div class="menu-item-text">
-                <h3 class="menu-item-heading">
-                    <span class="menu-item-name">{{item.name}}</span>
-                    <span class="menu-item-price">{{item.price|currency}}</span>
-                </h3>
-                <h4 class="menu-item-desc">{{item.desc}}</h4>
-            </div>
-        </button>
+    <h2 #anchorCombos>Combos</h2>
+    <!-- Display Combos -->
+    <div id="item-group">
+        <div class="menu-item" *ngFor="let item of combosMenu">
+            <button routerLink="/order/menu/{{item.id}}" class="menu-button">
+                <div *ngIf="item.image">
+                    <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
+                </div>
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">{{item.name}}</span>
+                        <span class="menu-item-price">{{item.price|currency}}</span>
+                    </h3>
+                    <h4 class="menu-item-desc">{{item.desc}}</h4>
+                </div>
+            </button>
+        </div>
     </div>
-</div>
 
-<h2 #anchorNigiri>Nigiri</h2>
-<!-- Display Nigiri -->
-<div id="item-group">
-    <div class="menu-item" *ngFor="let item of nigiriMenu">
-        <button routerLink="/order/menu/{{item.id}}" class="menu-button">
-            <div *ngIf="item.image">
-                <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
-            </div>
-            <div class="menu-item-text">
-                <h3 class="menu-item-heading">
-                    <span class="menu-item-name">{{item.name}}</span>
-                    <span class="menu-item-price">{{item.price|currency}}</span>
-                </h3>
-                <h4 class="menu-item-desc">{{item.desc}}</h4>
-            </div>
-        </button>
+    <h2 #anchorNigiri>Nigiri</h2>
+    <!-- Display Nigiri -->
+    <div id="item-group">
+        <div class="menu-item" *ngFor="let item of nigiriMenu">
+            <button routerLink="/order/menu/{{item.id}}" class="menu-button">
+                <div *ngIf="item.image">
+                    <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
+                </div>
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">{{item.name}}</span>
+                        <span class="menu-item-price">{{item.price|currency}}</span>
+                    </h3>
+                    <h4 class="menu-item-desc">{{item.desc}}</h4>
+                </div>
+            </button>
+        </div>
     </div>
-</div>
 
-<h2 #anchorRolls>Sushi Rolls</h2>
-<!-- Display Sushi Rolls -->
-<div id="item-group">
-    <div class="menu-item" *ngFor="let item of rollsMenu">
-        <button routerLink="/order/menu/{{item.id}}" class="menu-button">
-            <div *ngIf="item.image">
-                <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
-            </div>
-            <div class="menu-item-text">
-                <h3 class="menu-item-heading">
-                    <span class="menu-item-name">{{item.name}}</span>
-                    <span class="menu-item-price">{{item.price|currency}}</span>
-                </h3>
-                <h4 class="menu-item-desc">{{item.desc}}</h4>
-            </div>
-        </button>
+    <h2 #anchorRolls>Sushi Rolls</h2>
+    <!-- Display Sushi Rolls -->
+    <div id="item-group">
+        <div class="menu-item" *ngFor="let item of rollsMenu">
+            <button routerLink="/order/menu/{{item.id}}" class="menu-button">
+                <div *ngIf="item.image">
+                    <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
+                </div>
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">{{item.name}}</span>
+                        <span class="menu-item-price">{{item.price|currency}}</span>
+                    </h3>
+                    <h4 class="menu-item-desc">{{item.desc}}</h4>
+                </div>
+            </button>
+        </div>
     </div>
-</div>
 
-<h2 #anchorSushiDinners>Sushi Entr&#233;es</h2>
-<!-- Display Sushi Entrees -->
-<div id="item-group">
-    <div class="menu-item" *ngFor="let item of sushiEntreesMenu">
-        <button routerLink="/order/menu/{{item.id}}" class="menu-button">
-            <div *ngIf="item.image">
-                <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
-            </div>
-            <div class="menu-item-text">
-                <h3 class="menu-item-heading">
-                    <span class="menu-item-name">{{item.name}}</span>
-                    <span class="menu-item-price">{{item.price|currency}}</span>
-                </h3>
-                <h4 class="menu-item-desc">{{item.desc}}</h4>
-            </div>
-        </button>
+    <h2 #anchorSushiDinners>Sushi Entr&#233;es</h2>
+    <!-- Display Sushi Entrees -->
+    <div id="item-group">
+        <div class="menu-item" *ngFor="let item of sushiEntreesMenu">
+            <button routerLink="/order/menu/{{item.id}}" class="menu-button">
+                <div *ngIf="item.image">
+                    <img class="menu-item-image" src="assets/images/menu/{{item.image}}" alt={{item.name}}>
+                </div>
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">{{item.name}}</span>
+                        <span class="menu-item-price">{{item.price|currency}}</span>
+                    </h3>
+                    <h4 class="menu-item-desc">{{item.desc}}</h4>
+                </div>
+            </button>
+        </div>
     </div>
 </div>

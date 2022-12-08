@@ -1,53 +1,53 @@
-<h2>Cart</h2>
+<div class="descBlock">
+    <h2>Cart</h2>
 
-<app-not-found 
-    [visible]="!cart || !cart.items.length"
-    notFoundMessage="Your cart is empty!"
-    resetLinkText="Go to Menu">
-</app-not-found>
+    <app-not-found [visible]="!cart || !cart.items.length" notFoundMessage="Your cart is empty!"
+        resetLinkText="Go to Menu">
+    </app-not-found>
 
-<div *ngIf="cart && cart.items.length" class="container">
-    <ul>
-        <li *ngFor="let cartItem of cart.items">
+    <div *ngIf="cart && cart.items.length" class="container">
+        <ul>
+            <li *ngFor="let cartItem of cart.items">
+                <div>
+                    <img src="/assets/images/menu/{{cartItem.menu.image}}" alt="{{cartItem.menu.name}}">
+                </div>
+                <div>
+                    <a routerLink="/order/menu/{{cartItem.menu.id}}">
+                        {{cartItem.menu.name}}
+                    </a>
+                </div>
+                <div>
+                    <select #quantitySelect [value]="cartItem.quantity"
+                        (change)="changeQuantity(cartItem, quantitySelect.value);">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </div>
+
+                <div>
+                    {{cartItem.price | currency}}
+                </div>
+
+                <div>
+                    <button class="remove-button" (click)="removeFromCart(cartItem)">
+                        Remove
+                    </button>
+                </div>
+            </li>
+        </ul>
+
+        <div class="checkout">
             <div>
-                <img src="/assets/images/menu/{{cartItem.menu.image}}" alt="{{cartItem.menu.name}}">
-            </div>
-            <div>
-                <a routerLink="/order/menu/{{cartItem.menu.id}}">
-                    {{cartItem.menu.name}}
-                </a>
-            </div>
-            <div>
-                <select #quantitySelect [value]="cartItem.quantity"
-                    (change)="changeQuantity(cartItem, quantitySelect.value);">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                </select>
+                <div class="item-count">{{cart.totalCount}}</div>
+                <div class="total-price">{{cart.totalPrice | currency}}</div>
             </div>
 
-            <div>
-                {{cartItem.price | currency}}
-            </div>
-
-            <div>
-                <button class="remove-button" (click)="removeFromCart(cartItem)">
-                    Remove
-                </button>
-            </div>
-        </li>
-    </ul>
-
-    <div class="checkout">
-        <div>
-            <div class="item-count">{{cart.totalCount}}</div>
-            <div class="total-price">{{cart.totalPrice | currency}}</div>
+            <a routerLink="/checkout">Proceed to Checkout</a>
         </div>
 
-        <a routerLink="/checkout">Proceed to Checkout</a>
     </div>
-
 </div>
