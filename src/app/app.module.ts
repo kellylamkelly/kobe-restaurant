@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavBarComponent } from './partials/nav-bar/nav-bar.component';
 import { OrderNavBarComponent } from './partials/order-nav-bar/order-nav-bar.component';
 import { OrderOnlineComponent } from './order-online/order-online.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,8 +32,14 @@ import { OrderOnlineComponent } from './order-online/order-online.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-bottom-right',
+      newestOnTop: false
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

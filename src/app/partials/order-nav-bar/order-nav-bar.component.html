@@ -36,17 +36,17 @@
                 </li>
 
                 <!-- Link to login -->
-                <li>
+                <li *ngIf="!isAuth">
                     <a class="nav-link" routerLink="/order/login">Login</a>
                 </li>
 
                 <!-- Link to user dashboard -->
-                <li class="menu-container">
-                    <a class="nav-link" routerLink="/order/dashboard">John</a>
+                <li *ngIf="isAuth" class="menu-container">
+                    <a class="nav-link" routerLink="/order/dashboard">{{user.name}}</a>
                     <div class="menu">
                         <a class="nav-link" routerLink="/order/profile">Profile</a>
                         <a class="nav-link" routerLink="/order/orders">Orders</a>
-                        <a class="nav-link">Logout</a>
+                        <a (click)="logout();" class="nav-link">Logout</a>
                     </div>
                 </li>
 

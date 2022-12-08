@@ -9,3 +9,5 @@ export const MENU_COMBOS_URL = MENU_URL + '/combos';
 export const MENU_NIGIRI_URL = MENU_URL + '/nigiri';
 export const MENU_SUSHIROLLS_URL = MENU_URL + '/sushirolls';
 export const MENU_SUSHIENTREES_URL = MENU_URL + '/sushientrees';
+
+export const USER_LOGIN_URL = BASE_URL + '/api/users/login';
