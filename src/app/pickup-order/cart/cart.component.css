@@ -67,7 +67,7 @@ li select {
 }
 
 li .remove-button {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   border: none;
   padding: 0.5rem;
   color: #d01500;
@@ -117,33 +117,32 @@ li .remove-button:hover {
   color: grey;
 }
 
-/* .checkout a {
-  padding: 1rem 0rem;
-  color: white;
-  background: #d01500;
-  display: block;
-  width: 99%;
-  border-radius: 1rem;
-  text-align: center;
-  justify-self: center;
-  text-decoration: none;
-} */
-
 .checkout a {
   background-color: white;
   border: 3px solid #d01500;
-  border-radius: 12px;
+  border-radius: 0.5rem;
   cursor: pointer;
   color: #d01500;
   font-size: 1.2rem;
-  padding: 0.8rem 1.8rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  padding: 1.2rem 3rem;
+  margin-bottom: 3rem;
 }
 
 .checkout a:hover {
   background-color: #d01500;
   color: white;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.checkout a:active {
+  background-color: #d01500;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 80%;
+}
+
+.checkout a:focus {
   text-decoration: none;
 }
