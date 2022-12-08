@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { sample_users } from '../data';
 import jwt from "jsonwebtoken";
 import asyncHandler from 'express-async-handler';
-import { UserModel } from '../models/user.model';
+import { User, UserModel } from '../models/user.model';
 
 const router = Router();
 
@@ -18,28 +18,34 @@ router.get("/seed", asyncHandler(
         res.send("Seed is done!");
 }))
 
-router.post("/login", (req, res) => {
+router.post("/login", asyncHandler( async (req, res) => {
     const {email, password} = req.body;
-    const user = sample_users.find(user => user.email === email && user.password === password);
+    const user = await UserModel.findOne({email, password});
 
     if (user) {
-        res.send(generateTokenResponse(user))
+        res.send(generateTokenResponse(user));
     }
     else {
         const BAD_REQUEST = 400;
         res.status(BAD_REQUEST).send("Username or password is invalid!");
     }
-})
+}))
 
-const generateTokenResponse = (user: any) => {
+const generateTokenResponse = (user: User) => {
     const token = jwt.sign({
         email: user.email, isAdmin: user.isAdmin
-    }, "SomeRandomText", {
+    }, process.env.JWT_SECRET!, {
         expiresIn: "30d"
     });
 
-    user.token = token;
-    return user;
+    return {
+        id: user.id,
+        email: user.email,
+        name: user.name,
+        address: user.address,
+        isAdmin: user.isAdmin,
+        token: token
+    };
 }
 
 export default router;
