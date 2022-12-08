@@ -12,6 +12,7 @@ import { InputValidationComponent } from '../../partials/input-validation/input-
 import { TextInputComponent } from '../../partials/text-input/text-input.component';
 import { DefaultButtonComponent } from '../../partials/default-button/default-button.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { LoadingInterceptor } from 'src/app/shared/interceptors/loading.interceptor';
 
 @NgModule({
   declarations: [
