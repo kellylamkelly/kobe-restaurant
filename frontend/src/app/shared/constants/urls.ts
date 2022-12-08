@@ -11,3 +11,4 @@ export const MENU_SUSHIROLLS_URL = MENU_URL + '/sushirolls';
 export const MENU_SUSHIENTREES_URL = MENU_URL + '/sushientrees';
 
 export const USER_LOGIN_URL = BASE_URL + '/api/users/login';
+export const USER_REGISTER_URL = BASE_URL + '/api/users/register';

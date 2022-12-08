@@ -16,7 +16,7 @@ form {
     justify-content: center;
 }
 
-.register {
+.login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@ a:active {
     text-underline-offset: 2px;
 }
 
-.login {
+.register {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,6 +1,8 @@
 <div class="container">
     <div class="details">
-        <h2>Login</h2>
+        <div class="descBlock">
+            <h2>Login</h2>
+        </div>
 
         <form [formGroup]="loginForm" (ngSubmit)="submit()">
             <!-- Email -->
@@ -20,7 +22,18 @@
             </text-input>
 
             <!-- Submit Button -->
-            <default-button text="Login"></default-button>
+            <div class="login">
+                <default-button text="Login"></default-button>
+            </div>
+
+            <!-- New User Text -->
+            <div class="register">
+                New user? &nbsp;
+                <a routerLink="/order/register" [queryParams]="{returnUrl: returnUrl}">
+                    Register here
+                </a>
+            </div>
+
         </form>
 
     </div>

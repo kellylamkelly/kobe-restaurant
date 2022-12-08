@@ -11,6 +11,7 @@ import { InputContainerComponent } from '../../partials/input-container/input-co
 import { InputValidationComponent } from '../../partials/input-validation/input-validation.component';
 import { TextInputComponent } from '../../partials/text-input/text-input.component';
 import { DefaultButtonComponent } from '../../partials/default-button/default-button.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DefaultButtonComponent } from '../../partials/default-button/default-bu
     InputContainerComponent,
     InputValidationComponent,
     TextInputComponent,
-    DefaultButtonComponent
+    DefaultButtonComponent,
+    RegisterPageComponent
   ],
   imports: [
     CommonModule,

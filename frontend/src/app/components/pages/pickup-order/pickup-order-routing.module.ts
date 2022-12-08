@@ -6,6 +6,7 @@ import { CartComponent } from './cart/cart.component';
 import { ItemsComponent } from './items/items.component';
 import { ItemPageComponent } from './item-page/item-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,7 @@ const routes: Routes = [
       { path: 'menu/:id', component: ItemPageComponent},
       { path: 'cart', component: CartComponent },
       { path: 'login', component: LoginPageComponent },
+      { path: 'register', component: RegisterPageComponent }
     ]
   },
 ];
