@@ -8,7 +8,7 @@
 }
 
 .container > *{
-    min-width: 26rem;
+    min-width: 30rem;
     max-width: 40rem;
 }
 
