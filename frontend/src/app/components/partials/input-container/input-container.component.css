@@ -1,7 +1,7 @@
 .container {
     position: relative;
     margin-bottom: 0.5rem;
-    border-radius: 0.7rem;
+    border-radius: 0.5rem;
     padding-top: 0.3rem;
     border: 1px solid lightgrey;
 }

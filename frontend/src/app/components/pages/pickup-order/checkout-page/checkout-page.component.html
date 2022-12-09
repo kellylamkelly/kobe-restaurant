@@ -10,6 +10,17 @@
             <text-input [control]="fc['name']" label="Name"></text-input>
             <text-input [control]="fc['phoneNumber']" label="Phone Number"></text-input>
         </form>
+
+        <!-- Order List -->
         <order-items-list [order]="order"></order-items-list>
+    </div>
+
+    <!-- Button -->
+    <div class="buttons-container">
+        <div class="buttons">
+            <button (click)="createOrder()">
+                Place Order
+            </button>
+        </div>
     </div>
 </div>

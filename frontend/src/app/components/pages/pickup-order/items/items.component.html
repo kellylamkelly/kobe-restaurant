@@ -1,13 +1,15 @@
-<div id="navAnchor">
-    <button (click)="scrollToElement(anchorApps)">Appetizers</button>
-    <button (click)="scrollToElement(anchorTepp)">Teppanyaki</button>
-    <button (click)="scrollToElement(anchorCombos)">Combos</button>
-    <button (click)="scrollToElement(anchorNigiri)">Nigiri</button>
-    <button (click)="scrollToElement(anchorRolls)">Sushi Rolls</button>
-    <button (click)="scrollToElement(anchorSushiDinners)">Sushi Entr&#233;es</button>
-</div>
-
 <div class="descBlock">
+    <h2>Order Online Menu</h2>
+
+    <div id="navAnchor">
+        <button class="anchorButton" (click)="scrollToElement(anchorApps)">Appetizers</button>
+        <button class="anchorButton" (click)="scrollToElement(anchorTepp)">Teppanyaki</button>
+        <button class="anchorButton" (click)="scrollToElement(anchorCombos)">Combos</button>
+        <button class="anchorButton" (click)="scrollToElement(anchorNigiri)">Nigiri</button>
+        <button class="anchorButton" (click)="scrollToElement(anchorRolls)">Sushi Rolls</button>
+        <button class="anchorButton" (click)="scrollToElement(anchorSushiDinners)">Sushi Entrées</button>
+    </div>
+
     <h2 #anchorApps>Appetizers</h2>
     <!-- Display Appetizers -->
     <div id="item-group">
@@ -103,7 +105,7 @@
         </div>
     </div>
 
-    <h2 #anchorSushiDinners>Sushi Entr&#233;es</h2>
+    <h2 #anchorSushiDinners>Sushi Entrées</h2>
     <!-- Display Sushi Entrees -->
     <div id="item-group">
         <div class="menu-item" *ngFor="let item of sushiEntreesMenu">
