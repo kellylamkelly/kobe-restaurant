@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="content">
+        <!-- Title -->
+        <div class="descBlock">
+            <h2>Order Summary</h2>
+        </div>
+
+        <!-- Summary -->
+        <div class="summary">
+            <div>
+                <h3>Name:</h3>
+                <span>{{order.name}}</span>
+            </div>
+            <div>
+                <h3>Phone:</h3>
+                <span>{{order.phoneNumber}}</span>
+            </div>
+        </div>
+
+        <!-- Order List -->
+        <order-items-list style="margin-top: 1.5rem;" [order]="order"></order-items-list>
+    </div>
+
+    <!-- Button -->
+    <div class="buttons-container">
+        <div class="buttons">
+
+        </div>
+    </div>
+</div>

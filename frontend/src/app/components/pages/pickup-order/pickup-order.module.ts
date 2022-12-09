@@ -14,6 +14,7 @@ import { DefaultButtonComponent } from '../../partials/default-button/default-bu
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 import { OrderItemsListComponent } from '../../partials/order-items-list/order-items-list.component';
+import { PaymentPageComponent } from './payment-page/payment-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { OrderItemsListComponent } from '../../partials/order-items-list/order-i
     DefaultButtonComponent,
     RegisterPageComponent,
     CheckoutPageComponent,
-    OrderItemsListComponent
+    OrderItemsListComponent,
+    PaymentPageComponent
   ],
   imports: [
     CommonModule,
