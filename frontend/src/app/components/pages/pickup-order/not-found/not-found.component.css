@@ -8,19 +8,21 @@ div {
     height: 15rem;
 }
 
-a {
-    font-size: 1.1rem;
+button {
     background-color: #d01500;
+    border: 3px solid #d01500;
+    border-radius: 0.5rem;
+    cursor: pointer;
     color: white;
-    border-radius: 10rem;
-    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
     margin: 1rem;
-    opacity: 0.8;
-    text-decoration: none;
+    padding: 0.5rem 3rem;
+    margin-top: 2rem;
 }
 
-a:hover {
-    opacity: 1;
+button:hover {
+    color: white;
     cursor: pointer;
     text-decoration: none;
+    opacity: 80%;
 }

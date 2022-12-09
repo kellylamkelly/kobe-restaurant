@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -10,14 +11,6 @@
     min-width: 25rem;
     max-width: 40rem;
 }
-
-/* img {
-    border-radius: 3rem;
-    flex: 1 0;
-    object-fit: cover;
-    height: 35rem;
-    margin: 1rem;
-} */
 
 .imgStyle {
     height: 400px;
@@ -46,16 +39,22 @@
     margin: 2rem 2rem 2rem 2rem 0;
 }
 
+.button-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15%;
+}
+
 button {
     background-color: white;
     border: 3px solid #d01500;
-    border-radius: 12px;
+    border-radius: 0.5rem;
     cursor: pointer;
     color: #d01500;
     font-size: 1.2rem;
-    padding: 0.8rem 1.8rem;
+    padding: 0.5rem 3rem;
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
 }
 
 button:hover {
@@ -63,4 +62,17 @@ button:hover {
     color: white;
     cursor: pointer;
     text-decoration: none;
+}
+
+.addButton {
+    color: white;
+    background-color: #d01500;
+}
+
+.addButton:hover {
+    opacity: 80%;
+}
+
+.addButton:active {
+    opacity: 80%;
 }
