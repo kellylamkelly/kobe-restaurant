@@ -7,6 +7,7 @@ import { ItemsComponent } from './items/items.component';
 import { ItemPageComponent } from './item-page/item-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,8 @@ const routes: Routes = [
       { path: 'menu/:id', component: ItemPageComponent},
       { path: 'cart', component: CartComponent },
       { path: 'login', component: LoginPageComponent },
-      { path: 'register', component: RegisterPageComponent }
+      { path: 'register', component: RegisterPageComponent },
+      { path: 'checkout', component: CheckoutPageComponent }
     ]
   },
 ];

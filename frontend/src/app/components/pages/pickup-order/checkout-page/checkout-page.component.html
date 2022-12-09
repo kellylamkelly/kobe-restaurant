@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="content">
+        <!-- Title -->
+        <div class="descBlock">
+            <h2>Order Form</h2>
+        </div>
+
+        <!-- Form -->
+        <form [formGroup]="checkoutForm">
+            <text-input [control]="fc['name']" label="Name"></text-input>
+            <text-input [control]="fc['phoneNumber']" label="Phone Number"></text-input>
+        </form>
+        <order-items-list [order]="order"></order-items-list>
+    </div>
+</div>

@@ -12,7 +12,8 @@ import { InputValidationComponent } from '../../partials/input-validation/input-
 import { TextInputComponent } from '../../partials/text-input/text-input.component';
 import { DefaultButtonComponent } from '../../partials/default-button/default-button.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
-import { LoadingInterceptor } from 'src/app/shared/interceptors/loading.interceptor';
+import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
+import { OrderItemsListComponent } from '../../partials/order-items-list/order-items-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { LoadingInterceptor } from 'src/app/shared/interceptors/loading.intercep
     InputValidationComponent,
     TextInputComponent,
     DefaultButtonComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    CheckoutPageComponent,
+    OrderItemsListComponent
   ],
   imports: [
     CommonModule,

@@ -30,7 +30,7 @@ export class RegisterPageComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(5)]],
       confirmPassword: ['', Validators.required],
-      address: ['', [Validators.required, Validators.minLength(10)]]
+      phoneNumber: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(15)]]
       },
       {
         validators: PasswordsMatchValidator('password', 'confirmPassword')
@@ -54,7 +54,7 @@ export class RegisterPageComponent implements OnInit {
       email: fv.email,
       password: fv.password,
       confirmPassword: fv.confirmPassword,
-      address: fv.address
+      phoneNumber: fv.phoneNumber
     };
 
     this.userService.register(user).subscribe(_ => {

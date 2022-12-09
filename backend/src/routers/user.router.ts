@@ -34,7 +34,7 @@ router.post("/login", asyncHandler( async (req, res) => {
 }))
 
 router.post('/register', asyncHandler( async (req, res) => {
-    const {name, email, password, address} = req.body;
+    const {name, email, password, phoneNumber} = req.body;
     const user = await UserModel.findOne({email});
     if (user) {
         res.status(HTTP_BAD_REQUEST).send("User with this email already exists, please login!");
@@ -49,7 +49,7 @@ router.post('/register', asyncHandler( async (req, res) => {
         name,
         email: email.toLowerCase(),
         password: encryptedPassword,
-        address,
+        phoneNumber,
         isAdmin: false
     }
 
@@ -68,7 +68,7 @@ const generateTokenResponse = (user: User) => {
         id: user.id,
         email: user.email,
         name: user.name,
-        address: user.address,
+        phoneNumber: user.phoneNumber,
         isAdmin: user.isAdmin,
         token: token
     };

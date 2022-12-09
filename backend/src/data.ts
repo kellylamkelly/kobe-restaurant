@@ -1467,14 +1467,14 @@ export const sample_users: any[] = [
         name: "John Doe",
         email: "john@gmail.com",
         password: "12345",
-        address: "Toronto On",
+        phoneNumber: "12125551212",
         isAdmin: true,
     },
     {
         name: "Jane Doe",
         email: "jane@gmail.com",
         password: "12345",
-        address: "Shanghai",
+        phoneNumber: "12342342344",
         isAdmin: false,
     },
 ];
