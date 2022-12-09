@@ -4,16 +4,17 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 3rem;
+    margin-top: 8rem;
 }
 
 .container > *{
-    min-width: 25rem;
+    min-width: 26rem;
     max-width: 40rem;
 }
 
 .imgStyle {
     height: 400px;
+    width: auto;
 }
 
 .item-details {
@@ -23,7 +24,7 @@
     flex: 1 0;
     padding: 2rem;
     color: black;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 
 /* .item-header {
@@ -36,7 +37,7 @@
 
 .item-price {
     font-size: 1.8rem;
-    margin: 2rem 2rem 2rem 2rem 0;
+    margin: 2rem;
 }
 
 .button-container {
