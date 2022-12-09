@@ -1,7 +1,9 @@
 import { Component, KeyValueDiffers, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { CartService } from 'src/app/services/cart.service';
+import { OrderService } from 'src/app/services/order.service';
 import { UserService } from 'src/app/services/user.service';
 import { Order } from 'src/app/shared/models/Order';
 
@@ -18,7 +20,9 @@ export class CheckoutPageComponent implements OnInit {
     cartService: CartService, 
     private formBuilder: FormBuilder,
     private userService: UserService,
-    private toastrService: ToastrService) {
+    private toastrService: ToastrService,
+    private orderService: OrderService, 
+    private router: Router) {
       const cart = cartService.getCart();
       this.order.items = cart.items;
       this.order.totalPrice = cart.totalPrice;
@@ -45,6 +49,13 @@ export class CheckoutPageComponent implements OnInit {
     this.order.name = this.fc['name'].value;
     this.order.phoneNumber = this.fc['phoneNumber'].value;
 
-    console.log(this.order);
+    this.orderService.create(this.order).subscribe({
+      next: () => {
+        this.router.navigateByUrl('/order/payment');
+      },
+      error: (errorResponse) => {
+        this.toastrService.error(errorResponse.error, 'Cart');
+      }
+    })
   }
 }
