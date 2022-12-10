@@ -25,6 +25,8 @@ export class CheckoutPageComponent implements OnInit {
     private router: Router) {
       const cart = cartService.getCart();
       this.order.items = cart.items;
+      this.order.subtotal = cart.subtotal;
+      this.order.tax = cart.tax;
       this.order.totalPrice = cart.totalPrice;
     }
 

@@ -118,12 +118,22 @@ li .remove-button:active {
 }
 
 .item-count::before {
-  content: 'Count: ';
+  content: 'Number of items: ';
   color: grey;
 }
 
 .total-price::before {
-  content: 'Price: ';
+  content: 'Total: ';
+  color: grey;
+}
+
+.subtotal::before {
+  content: 'Subtotal: ';
+  color: grey;
+}
+
+.tax::before {
+  content: 'Tax: ';
   color: grey;
 }
 

@@ -32,6 +32,32 @@
         <td colspan="3"></td>
         <td>
             <strong>
+                Subtotal : 
+            </strong>
+        </td>
+        <td>
+            <strong>
+                {{order.subtotal | currency}}
+            </strong>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+        <td>
+            <strong>
+                Tax : 
+            </strong>
+        </td>
+        <td>
+            <strong>
+                {{order.tax | currency}}
+            </strong>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+        <td>
+            <strong>
                 Total : 
             </strong>
         </td>

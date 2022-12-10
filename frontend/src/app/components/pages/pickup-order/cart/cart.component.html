@@ -43,6 +43,8 @@
         <div class="checkout">
             <div>
                 <div class="item-count">{{cart.totalCount}}</div>
+                <div class="subtotal">{{cart.subtotal | currency}}</div>
+                <div class="tax">{{cart.tax | currency}}</div>
                 <div class="total-price">{{cart.totalPrice | currency}}</div>
             </div>
             

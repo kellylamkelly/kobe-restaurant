@@ -19,6 +19,8 @@ export const OrderItemSchema = new Schema<OrderItem>(
 export interface Order {
     id: number;
     items: OrderItem[];
+    subtotal: number;
+    tax: number;
     totalPrice: number;
     name: string;
     phoneNumber: string;
@@ -34,6 +36,8 @@ const orderSchema = new Schema<Order>(
         name: { type: String, required: true },
         phoneNumber: { type: String, required: true },
         paymentId: { type: String },
+        subtotal: { type: Number, required: true },
+        tax: { type: Number, required: true },
         totalPrice: { type: Number, required: true },
         items: { type: [OrderItemSchema], required: true },
         status: { type: String, default: OrderStatus.NEW },
