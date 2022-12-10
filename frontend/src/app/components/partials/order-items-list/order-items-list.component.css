@@ -3,12 +3,10 @@ table {
     border: 1px solid lightgrey;
     /* margin-top: 1rem; */
     border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
 }
 
 h3 {
-    margin-top: 0.5rem;
-    margin-left: 0.3rem;
     color: grey;
 }
 
@@ -17,7 +15,7 @@ a:hover {
 }
 
 td {
-    height: 3rem;
+    height: 1rem;
 }
 
 td img {

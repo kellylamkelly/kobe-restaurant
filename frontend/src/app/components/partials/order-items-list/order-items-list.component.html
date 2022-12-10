@@ -1,14 +1,16 @@
 <table>
     <tr>
         <td colspan="5">
-            <h3>Order Items:</h3>
+            <div style="padding-bottom: 1rem;">
+                <h3>Order Items:</h3>
+            </div>
         </td>
     </tr>
     <tr *ngFor="let item of order.items">
         <!-- Image -->
         <td>
             <a routerLink="/order/menu/{{item.menu.id}}">
-                <img src="../assets/images/menu/{{item.menu.image}}"/>
+                <img src="../assets/images/menu/{{item.menu.image}}" />
             </a>
         </td>
         <!-- Name -->
@@ -31,34 +33,30 @@
     <tr>
         <td colspan="3"></td>
         <td>
-            <strong>
-                Subtotal : 
-            </strong>
+            <em>
+                Subtotal :
+            </em>
         </td>
         <td>
-            <strong>
-                {{order.subtotal | currency}}
-            </strong>
+            {{order.subtotal | currency}}
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+        <td>
+            <em>
+                Tax :
+            </em>
+        </td>
+        <td>
+            {{order.tax | currency}}
         </td>
     </tr>
     <tr>
         <td colspan="3"></td>
         <td>
             <strong>
-                Tax : 
-            </strong>
-        </td>
-        <td>
-            <strong>
-                {{order.tax | currency}}
-            </strong>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="3"></td>
-        <td>
-            <strong>
-                Total : 
+                Total :
             </strong>
         </td>
         <td>
