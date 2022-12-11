@@ -52,6 +52,7 @@ export class CheckoutPageComponent implements OnInit {
 
     this.order.name = this.fc['name'].value;
     this.order.phoneNumber = this.fc['phoneNumber'].value;
+    this.order.pickupTime = this.fc['pickupTime'].value;
 
     this.orderService.create(this.order).subscribe({
       next: () => {
