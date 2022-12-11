@@ -1,5 +1,5 @@
-import { Component, KeyValueDiffers, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, Input, KeyValueDiffers, OnInit } from '@angular/core';
+import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { CartService } from 'src/app/services/cart.service';
@@ -21,7 +21,7 @@ export class CheckoutPageComponent implements OnInit {
     private formBuilder: FormBuilder,
     private userService: UserService,
     private toastrService: ToastrService,
-    private orderService: OrderService, 
+    private orderService: OrderService,
     private router: Router) {
       const cart = cartService.getCart();
       this.order.items = cart.items;
@@ -32,9 +32,11 @@ export class CheckoutPageComponent implements OnInit {
 
   ngOnInit(): void {
     let {name, phoneNumber} = this.userService.currentUser;
+    let pickupTime = this.order.pickupTime;
     this.checkoutForm = this.formBuilder.group({
       name: [name, Validators.required],
-      phoneNumber: [phoneNumber, [Validators.required, Validators.minLength(10), Validators.maxLength(15)]]
+      phoneNumber: [phoneNumber, [Validators.required, Validators.minLength(10), Validators.maxLength(15)]],
+      pickupTime: [pickupTime, Validators.required]
     });
   }
 
@@ -60,4 +62,8 @@ export class CheckoutPageComponent implements OnInit {
       }
     })
   }
+
+  // changePickupTime(pickupTime: string) {
+  //   this.order.pickupTime = pickupTime;
+  // }
 }

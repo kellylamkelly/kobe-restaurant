@@ -9,6 +9,28 @@
         <form [formGroup]="checkoutForm">
             <text-input [control]="fc['name']" label="Name"></text-input>
             <text-input [control]="fc['phoneNumber']" label="Phone Number"></text-input>
+            <text-input [control]="fc['pickupTime']" label="Pickup Time"></text-input>
+            <!-- <input-container label="Pickup Time">
+                    <select #time (change)="changePickupTime(time.value);">
+                        <option>4:00 PM</option>
+                        <option>4:20 PM</option>
+                        <option>4:40 PM</option>
+
+                        <option>5:00 PM</option>
+                        <option>5:20 PM</option>
+                        <option>5:40 PM</option>
+
+                        <option>6:00 PM</option>
+                        <option>6:20 PM</option>
+                        <option>6:40 PM</option>
+
+                        <option>7:00 PM</option>
+                        <option>7:20 PM</option>
+                        <option>7:40 PM</option>
+
+                        <option>8:00 PM</option>
+                    </select>
+            </input-container> -->
         </form>
 
         <!-- Order List -->

@@ -8,7 +8,8 @@
     width: 35rem;
 }
 
-.content, form {
+.content,
+form {
     display: flex;
     flex-direction: column;
 }
@@ -45,4 +46,11 @@ button:hover {
     cursor: pointer;
     text-decoration: none;
     opacity: 80%;
+}
+
+select {
+    border: 1px solid lightgrey;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 100;
 }

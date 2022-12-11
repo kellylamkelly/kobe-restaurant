@@ -24,6 +24,7 @@ export interface Order {
     totalPrice: number;
     name: string;
     phoneNumber: string;
+    pickupTime: string;
     paymentId: string;
     status: OrderStatus;
     user: Types.ObjectId;
@@ -35,6 +36,7 @@ const orderSchema = new Schema<Order>(
     {
         name: { type: String, required: true },
         phoneNumber: { type: String, required: true },
+        pickupTime: { type: String, required: true },
         paymentId: { type: String },
         subtotal: { type: Number, required: true },
         tax: { type: Number, required: true },
