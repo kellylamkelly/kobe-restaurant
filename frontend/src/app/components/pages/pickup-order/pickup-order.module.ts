@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PickupOrderRoutingModule } from './pickup-order-routing.module';
-import { CartComponent } from './cart/cart.component';
-import { ItemsComponent } from './items/items.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { MenuPageComponent } from './menu-page/menu-page.component';
 import { ItemPageComponent } from './item-page/item-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginPageComponent } from './login-page/login-page.component';
@@ -16,12 +16,13 @@ import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 import { OrderItemsListComponent } from '../../partials/order-items-list/order-items-list.component';
 import { PaymentPageComponent } from './payment-page/payment-page.component';
 import { PaypalButtonComponent } from '../../partials/paypal-button/paypal-button.component';
+import { PaymentSuccessPageComponent } from './payment-success-page/payment-success-page.component';
 
 @NgModule({
   declarations: [
-    CartComponent,
+    CartPageComponent,
     ItemPageComponent,
-    ItemsComponent,
+    MenuPageComponent,
     NotFoundComponent,
     LoginPageComponent,
     InputContainerComponent,
@@ -32,7 +33,8 @@ import { PaypalButtonComponent } from '../../partials/paypal-button/paypal-butto
     CheckoutPageComponent,
     OrderItemsListComponent,
     PaymentPageComponent,
-    PaypalButtonComponent
+    PaypalButtonComponent,
+    PaymentSuccessPageComponent
   ],
   imports: [
     CommonModule,

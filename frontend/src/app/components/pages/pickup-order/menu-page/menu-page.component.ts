@@ -4,11 +4,11 @@ import { MenuService } from 'src/app/services/menu.service';
 import { Menu } from 'src/app/shared/models/Menu';
 
 @Component({
-  selector: 'app-items',
-  templateUrl: './items.component.html',
-  styleUrls: ['./items.component.css']
+  selector: 'app-menu-page',
+  templateUrl: './menu-page.component.html',
+  styleUrls: ['./menu-page.component.css']
 })
-export class ItemsComponent implements OnInit {
+export class MenuPageComponent implements OnInit {
 
   // Anchor Links
   scrollToElement($element: any): void {

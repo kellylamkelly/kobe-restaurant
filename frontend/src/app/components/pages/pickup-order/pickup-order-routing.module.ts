@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { PickupOrderComponent } from './pickup-order.component';
-import { CartComponent } from './cart/cart.component';
-import { ItemsComponent } from './items/items.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { MenuPageComponent } from './menu-page/menu-page.component';
 import { ItemPageComponent } from './item-page/item-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
@@ -14,9 +14,9 @@ const routes: Routes = [
   {
     path: '', component: PickupOrderComponent, children: [
       { path: '', redirectTo: 'menu', pathMatch: 'full' },
-      { path: 'menu', component: ItemsComponent},
+      { path: 'menu', component: MenuPageComponent},
       { path: 'menu/:id', component: ItemPageComponent},
-      { path: 'cart', component: CartComponent },
+      { path: 'cart', component: CartPageComponent },
       { path: 'login', component: LoginPageComponent },
       { path: 'register', component: RegisterPageComponent },
       { path: 'checkout', component: CheckoutPageComponent },

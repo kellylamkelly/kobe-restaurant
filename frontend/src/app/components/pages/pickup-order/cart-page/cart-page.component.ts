@@ -4,12 +4,12 @@ import { Cart } from 'src/app/shared/models/Cart';
 import { CartItem } from 'src/app/shared/models/CartItem';
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  selector: 'app-cart-page',
+  templateUrl: './cart-page.component.html',
+  styleUrls: ['./cart-page.component.css']
 })
 
-export class CartComponent implements OnInit {
+export class CartPageComponent implements OnInit {
   cart!: Cart;
   constructor(private cartService: CartService) {
     this.cartService.getCartObservable().subscribe((cart) => {
