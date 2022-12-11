@@ -19,7 +19,6 @@ import { LoadingComponent } from './components/partials/loading/loading.componen
 import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
 import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
 
-
 @NgModule({
   declarations: [
     AppComponent,

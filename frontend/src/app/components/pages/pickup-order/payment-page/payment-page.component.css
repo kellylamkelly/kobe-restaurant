@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 1.5rem;
 }
 
 .content {
@@ -25,13 +26,18 @@
     flex-basis: 5rem;
 }
 
+.thank-you {
+    margin-top: 4.5rem;
+}
+
 .buttons-container {
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 2.5rem;
 }
 
-.buttons {
+/* .buttons {
     display: flex;
     justify-content: center;
     width: 35rem;
@@ -53,4 +59,4 @@ button:hover {
     cursor: pointer;
     text-decoration: none;
     opacity: 80%;
-}
+} */

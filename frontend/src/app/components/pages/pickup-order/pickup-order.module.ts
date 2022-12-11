@@ -15,6 +15,7 @@ import { RegisterPageComponent } from './register-page/register-page.component';
 import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 import { OrderItemsListComponent } from '../../partials/order-items-list/order-items-list.component';
 import { PaymentPageComponent } from './payment-page/payment-page.component';
+import { PaypalButtonComponent } from '../../partials/paypal-button/paypal-button.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PaymentPageComponent } from './payment-page/payment-page.component';
     RegisterPageComponent,
     CheckoutPageComponent,
     OrderItemsListComponent,
-    PaymentPageComponent
+    PaymentPageComponent,
+    PaypalButtonComponent
   ],
   imports: [
     CommonModule,
