@@ -10,7 +10,7 @@
         <!-- Image -->
         <td>
             <a routerLink="/order/menu/{{item.menu.id}}">
-                <img src="../assets/images/menu/{{item.menu.image}}" />
+                <img onerror="this.remove()" src="../assets/images/menu/{{item.menu.image}}" />
             </a>
         </td>
         <!-- Name -->
