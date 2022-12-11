@@ -9,6 +9,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 import { PaymentPageComponent } from './payment-page/payment-page.component';
+import { PaymentSuccessPageComponent } from './payment-success-page/payment-success-page.component';
+import { AuthGuard } from 'src/app/auth/auth.guard';
 
 const routes: Routes = [
   {
@@ -19,8 +21,9 @@ const routes: Routes = [
       { path: 'cart', component: CartPageComponent },
       { path: 'login', component: LoginPageComponent },
       { path: 'register', component: RegisterPageComponent },
-      { path: 'checkout', component: CheckoutPageComponent },
-      { path: 'payment', component: PaymentPageComponent }
+      { path: 'checkout', component: CheckoutPageComponent, canActivate: [AuthGuard] },
+      { path: 'payment', component: PaymentPageComponent, canActivate: [AuthGuard] },
+      { path: 'id/:orderId', component: PaymentSuccessPageComponent, canActivate: [AuthGuard] }
     ]
   },
 ];

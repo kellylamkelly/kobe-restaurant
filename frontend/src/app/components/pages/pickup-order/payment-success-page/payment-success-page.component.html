@@ -1,1 +1,38 @@
-<p>payment-success-page works!</p>
+<div class="container">
+    <div class="content" *ngIf="order">
+        <!-- Title -->
+        <div class="descBlock">
+            <h2>Order #{{order.id}}</h2>
+            <div class="thank-you">
+                <h3>Thank you for your payment!</h3>
+            </div>
+        </div>
+        <div class="summary">
+            <div>
+                <h3>Date:</h3>
+                <span>{{order.createdAt | date: 'medium'}}</span>
+            </div>
+            <div>
+                <h3>Name:</h3>
+                <span>{{order.name}}</span>
+            </div>
+            <div>
+                <h3>Phone:</h3>
+                <span>{{order.phoneNumber}}</span>
+            </div>
+            <div>
+                <h3>Pickup:</h3>
+                <span>{{order.pickupTime}}</span>
+            </div>
+            <div>
+                <h3>Status:</h3>
+                <span>{{order.status}}</span>
+            </div>
+            <div *ngIf="order.paymentId">
+                <h3>Payment ID:</h3>
+                <span>{{order.paymentId}}</span>
+            </div>
+        </div>
+        <order-items-list style="margin-top: 1.5rem;" [order]="order"></order-items-list>
+    </div>
+</div>
