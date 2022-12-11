@@ -18,6 +18,9 @@
                     </a>
                 </div>
                 <div>
+                    {{cartItem.menu.price | currency}}
+                </div>
+                <div>
                     <select #quantitySelect [value]="cartItem.quantity"
                         (change)="changeQuantity(cartItem, quantitySelect.value);">
                         <option>1</option>

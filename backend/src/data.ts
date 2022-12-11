@@ -1402,21 +1402,21 @@ export const menu: any[] = [
     },
     {
         plu: 510,
-        name: "12 oz Sapparo",
+        name: "12 oz Sapporo",
         price: 4.50,
         category: "Beverages",
         subcategory: "Beers"
     },
     {
         plu: 511,
-        name: "16 oz Sapparo",
+        name: "16 oz Sapporo",
         price: 6.50,
         category: "Beverages",
         subcategory: "Beers"
     },
     {
         plu: 512,
-        name: "22 oz Sapparo",
+        name: "22 oz Sapporo",
         price: 8.50,
         category: "Beverages",
         subcategory: "Beers"
