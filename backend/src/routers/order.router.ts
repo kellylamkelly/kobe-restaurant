@@ -16,6 +16,7 @@ router.post('/create', asyncHandler(async (req: any, res: any) => {
         return;
     }
 
+    // Delete any order from user with status = "NEW"
     await OrderModel.deleteOne({
         user: req.user.id,
         status: OrderStatus.NEW

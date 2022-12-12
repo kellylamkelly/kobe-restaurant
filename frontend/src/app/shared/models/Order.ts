@@ -8,7 +8,7 @@ export class Order {
     totalPrice!: number;
     name!: string;
     phoneNumber!: string;
-    pickupTime: string = "ASAP (~25 mins)";
+    pickupTime: string = "ASAP (~20 mins)";
     paymentId!: string;
     createdAt!: string;
     status!: string;

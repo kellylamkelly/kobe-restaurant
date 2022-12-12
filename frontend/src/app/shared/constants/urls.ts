@@ -1,5 +1,5 @@
 // change url to real url when published
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'http://localhost:3000';
 
 export const MENU_URL = BASE_URL + '/api/menu';
 export const MENU_ID_URL = MENU_URL + '/';
