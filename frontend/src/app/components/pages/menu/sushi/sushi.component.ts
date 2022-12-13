@@ -8,11 +8,12 @@ import menuJson from 'src/assets/menu.json';
 })
 export class SushiComponent implements OnInit {
 
-  menus = [
+  nigiriAndEntrees = [
     {label: "NIGIRI", field: menuJson.menu.sushi.nigiri},
-    {label: "ENTR\u00C9ES", field: menuJson.menu.sushi.entrees}, 
-    {label: "SUSHI ROLLS", field: menuJson.menu.sushi.rolls}
+    {label: "ENTR\u00C9ES", field: menuJson.menu.sushi.entrees}
   ]
+
+  rolls = {label: "SUSHI ROLLS", field: menuJson.menu.sushi.rolls}
 
   constructor() { }
 
